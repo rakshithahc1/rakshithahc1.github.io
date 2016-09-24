@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+    <title>{% if page.title %}{{ page.title }}{% endif %}</title>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- <link href="/assets/css/pinchzoomer.min.css" rel="stylesheet">
+   <link href="/assets/css/fullscreen.min.css" rel="stylesheet"> -->
+     <!-- Styles -->
+    {% if page.layout == "default" %}
+    <link rel="stylesheet" type="text/css" href="/assets/css/jquery-ui.css"/>
+    <script type="text/javascript">
+      var pageName = "homepage";
+    </script>
+    {% endif %}
+    {% if page.layout == "default" %}
+    <script type="text/javascript">
+      var pageName = "homepage";
+    </script>
+    {% endif %}
+    {% if page.layout == "default" %}
+    <script type="text/javascript">
+      var pageName = "homepage";
+    </script>
+    {% endif %}
+    {% if page.layout == "blog" %}
+    <script type="text/javascript">
+      var pageName = "blog";
+    </script>
+    {% endif %}
+    {% if page.layout == "bootcamp" %}
+    <script type="text/javascript">
+      var pageName = "bootcamp";
+    </script>
+    {% endif %}
+    {% if page.layout == "casestudy" %}
+    <script type="text/javascript">
+      var pageName = "casestudy";
+    </script>
+    {% endif %}
+    {% if page.layout == "collaborative_workforce" %}
+    <script type="text/javascript">
+      var pageName = "collaborative_workforce";
+    </script>
+    {% endif %}
+    {% if page.layout == "company" %}
+    <script type="text/javascript">
+      var pageName = "company";
+    </script>
+    {% endif %}
+    {% if page.layout == "engage_us" %}
+    <script type="text/javascript">
+      var pageName = "engage_us";
+    </script>
+    {% endif %}
+    {% if page.layout == "job_board" %}
+    <script type="text/javascript">
+      var pageName = "job_board";
+    </script>
+    {% endif %}
+    {% if page.layout == "navblog_detail" %}
+    <script type="text/javascript">
+      var pageName = "navblog_detail";
+    </script>
+    {% endif %}
+     {% if page.layout == "our_thinking" %}
+    <script type="text/javascript">
+      var pageName = "our_thinking";
+    </script>
+    {% endif %}
+     {% if page.layout == "portfolio" %}
+    <script type="text/javascript">
+      var pageName = "portfolio";
+    </script>
+    {% endif %}
+     {% if page.layout == "ups_devops" %}
+    <script type="text/javascript">
+      var pageName = "ups_devops";
+    </script>
+    {% endif %}
+    <link rel="stylesheet" type="text/css" href="/assets/css/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/css/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/chan.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="/assets/js/modernizr/modernizr.js"></script>
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+    <link href="/assets/css/jquery.multiselect.css" rel="stylesheet" />
+  </head>
+
+{% if page.layout == "default" %}
+<body class="hw-home-body">
+{% endif %}
+
+  {% if page.layout == "default" %}
+  <header class="hw-home">
+    {% else %}
+    <header class="hw-others">
+  
+{% endif %}
+
+
+
+  <!-- navigation-bar -->
+          <nav class="nav-desktop navbar navbar-default">
+            <div>
+              <!-- logo -->
+                <div class="logo">
+                  <a href="/"></a>
+                </div>
+              <!-- End of logo -->
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="Hashworks-Nav">
+                <ul class="nav navbar-nav navbar-left">
+                 
+                <li class="gotham-rounded-light header-links dropdown-link">
+                   <a id="anchor-portfolio"  href="/portfolio">Portfolio</a>
+                    <ul class="dropdown pf-dd">
+                      <a href="/portfolio/#DataOps/" clickid="pvh-1" id="pvh1-1"><li class="gotham-rounded-light hw-contact-no first_dropdown">DataOps</li></a>
+                      <a href="/portfolio/#DevOps/" clickid="pvh-2" id="pvh2-2"><li class="gotham-rounded-light hw-contact-no">DevOps</li></a>
+                      <a href="/portfolio/#DataScience/" clickid="pvh-3" id="pvh3-3"><li class="gotham-rounded-light hw-contact-no">Data Science</li></a>
+                      <a href="/portfolio/#ui-ux/" clickid="pvh-4" id="pvh4-4"><li class="gotham-rounded-light hw-contact-no">UX/UI</li></a>
+                      <a href="/portfolio/#mobility/" clickid="pvh-5" id="pvh5-5"><li class="gotham-rounded-light hw-contact-no last_dropdown">Mobility</li></a>
+                    </ul>
+                </li>
+                 
+                <li class="gotham-rounded-light header-links dropdown-link">
+                      <a href="/engage_us">Engage Us </a>
+                      <ul class="dropdown dropdown-width">
+                          <a href="/our_thinking"><li class="gotham-rounded-light hw-contact-no">Our Thinking</li></a>
+                          <a href="/collaborative_workforce"><li class="gotham-rounded-light hw-contact-no">Collaborative Workforce</li></a>
+                          <a href="/bootcamp"><li class="gotham-rounded-light hw-contact-no">Bootcamps</li></a>
+                      </ul>
+                </li>
+                   <li class="gotham-rounded-light header-links pointer">
+                      <a href="javascript:void(0);">Case Study</a>
+                   </li>
+                 </ul>
+                 <span class="line-animation1" style="overflow: hidden; width: 0px; left: 0;"></span>                           
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="gotham-rounded-light header-links">
+                    
+                       <a href="/company">Company</a>
+                   </li>
+                   <li class="gotham-rounded-light header-links">
+                    
+                       <a href="/blog">Blog</a>
+                   </li>
+                   <li class="gotham-rounded-light header-links">
+                    
+                       <a href="/job_board">Job Board</a>
+                   </li>
+                   <li class="gotham-rounded-light header-links pointer1">
+                    
+                       <a href="#">News</a>
+                   </li>
+
+                  <!-- search bar-->
+                  <li>
+                    <div id="credits" class=" hidden ">
+
+                        <span id="google-search-div">
+                            <gcse:search></gcse:search>
+                            <i class="fa fa-angle-right search-arrow"></i>
+                            
+                       
+                      <!-- </span> -->
+                      </span>
+                   </div>
+                  </li>
+                  <!-- end  search bar-->
+                  <li><a  href="#credits" class="toggle btn "><i class="fa fa-search"></i></a></li>
+                </ul>
+                  <span class="line-animation" style="overflow: hidden; width: 0px; left: 0;"></span>
+                 </li>
+               </ul>
+
+             </div><!-- /.navbar-collapse -->
+           </div><!-- /.container-fluid -->
+          </nav>
+        <!-- navigation-bar -->
+
+    <nav class="nav-mob">
+      <div class="logo">
+        <a href="/"></a>
+      </div>
+      <div id="nav-icon2">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="toc1" class="on menu-hide" style="right: 0px;">
+      <p id="button2"><img src="/assets/img/close.png" alt="close"></p>
+        <ul class="hw-menu-list">
+              <!-- search bar-->
+              <li class="srch-content-menu">
+                <div id="credits" class=" hidden ">
+                  <span id="google-search-div">
+                    <gcse:search></gcse:search>
+                      <i class="fa fa-angle-right search-arrow"></i>
+                  </span>
+                </div>
+                <a href="#credits" class="toggle btn srch-btn"><img src="/assets/img/search.png" alt="search"><span class="srch-txt">Search</span></a>
+              </li>
+              <!-- end  search bar-->  
+              <li>
+                  <a class="pf-icon" href="/portfolio/" ontouchstart=""><span class="menu-icon"></span><span class="menu-text">Portfolio</span></a></li>
+              <li>
+                  <a class="es-icon" href="/engage_us/" ontouchstart=""><span class="menu-icon"></span><span class="menu-text">Engage&nbspUs</span></a></li>
+              <li>
+                  <a class="cs-icon" href="javascript:void(0);" ontouchstart="" data-toggle="tooltip" data-placement="right" title="Coming Soon"><span class="menu-icon"></span><span class="menu-text">Case&nbsp;Study</span></a></li>
+              <li>
+                  <a class="comp-icon" href="/company/" ontouchstart=""><span class="menu-icon"></span><span class="menu-text">Company</span></a></li>
+              <li>
+                  <a class="blog-icon" href="/blog/" ontouchstart=""><span class="menu-icon"></span><span class="menu-text">Blog</span></a></li>
+              <li>
+                  <a class="jb-icon" href="/job_board/" ontouchstart=""><span class="menu-icon"></span><span class="menu-text">Job&nbsp;Board</span></a></li>
+              <li>
+                  <a class="news-icon" href="javascript:void(0);" ontouchstart="" data-toggle="tooltip" data-placement="right" title="Coming Soon"><span class="menu-icon"></span><span class="menu-text">News</span></a></li>
+          </ul>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 social-share-menu-list">
+            <a target="new" class="fa-stack hw-socialshare social-icons" href="https://www.facebook.com/hashworks/">
+            <!-- <span > -->
+              <i class="fa fa-circle-thin fa-stack-2x"></i>
+              <i class="fa fa-facebook fa-stack-1x"></i>
+            <!-- </span> -->
+            </a>
+            <a target="new" class="fa-stack hw-socialshare social-icons" href="https://twitter.com/hashworksco">
+            <!-- <span > -->
+              <i class="fa fa-circle-thin fa-stack-2x"></i>
+              <i class="fa fa-twitter fa-stack-1x"></i>
+            <!-- </span> -->
+            </a>
+            <a target="new" class="fa-stack hw-socialshare social-icons" href="https://www.linkedin.com/company/9228490">
+            <!-- <span > -->
+              <i class="fa fa-circle-thin fa-stack-2x"></i>
+              <i class="fa fa-linkedin fa-stack-1x"></i>
+            <!-- </span> -->
+               </a>
+          </div>
+      </div>
+    </nav>
+</header>  

@@ -1,0 +1,393 @@
+/*customer happiness section*/
+  /*----------------------------------------------------------------------
+  portfolio pages
+  -----------------------------------------------------------------------*/
+
+  .cust-hap {
+    left: 50%;
+    position: absolute;
+    top: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+
+  .cust-hap .blog-main,
+  .cust-hap .blog-content,
+  .cust-hap .hm-text {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: flex;
+  }
+
+  .cust-hap .hm-text {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -o-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .grey-top-port {
+      height: 101px;
+      width: 100%;
+      z-index: 2;
+      position: relative;
+      background-size: cover;
+      margin-top: -114px;
+  }
+  /*banner- plux*/
+  div#shell {
+    display: block;
+    position: relative;
+    margin: 50px auto;
+    width: auto;
+    height: 318px;
+    left: 27%;        
+    }
+  #port-bol-banner div#shell {
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 318px;
+    left: 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: flex;
+  }
+  #port-bol-banner img#plax-sphere-1 {
+    position: absolute;
+    z-index: 2;
+    top: 33px;
+    left: 96px;
+    width: auto;
+  }
+  #port-bol-banner img#plax-sphere-2 {
+    position: absolute;
+    z-index: 2;
+    top: -9px;
+    left: 175px;
+    width: auto;
+  }
+  #port-bol-banner img#plax-sphere-3 {
+    position: absolute;
+    top: 33px;
+    left: 248px;
+    z-index: 1;
+    width: auto;
+  }
+  div#shell{
+    z-index: 1;
+    }
+
+  img#plax-sphere-1 {
+      height: 330px;
+      left: -89px;
+      position: absolute;
+      top: 25px;
+      width: auto;
+      z-index: 2;
+    }
+  img#plax-sphere-2 {
+      height: 381px;
+      left: -22px;
+      position: absolute;
+      top: -22px;
+      width: auto;
+      z-index: 2;
+    }
+  img#plax-sphere-3 {
+      height: 330px;
+      left: 129px;
+      position: absolute;
+      top: 25px;
+      width: auto;
+      z-index: 1;
+    }
+      /*End of banner plux*/
+  #port-think-and-learn-banner,
+  #port-smartas-banner {
+    background-size: cover;
+    background-position: center;
+    height: 512px;
+  }
+  #port-ticketnew-banner {
+    background-size: cover;
+    background-position: center;
+    height: 512px;
+  }
+  #port-healthcare-banner {
+    background-size: cover;
+    background-position: center;
+    height: 512px;
+  }
+  .btn-bolt,.btn-health{
+    margin: 30px auto 0;
+    padding: 12px 12px;
+    border: 1px solid #c6c6c6;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'gotham';
+    color: #707070;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    background: transparent;
+    text-transform: uppercase;
+     border-radius: 0;
+  }
+
+  .btn-bolt:hover,
+  .btn-bolt:focus,
+  .btn-bolt:active,.btn-health:hover{
+    background: #ee2b7b;
+    color: #fff;
+    border:1px solid #fff;
+    }
+
+  .project-name {
+    margin-top: 0px;
+    font-size:30px;
+  }
+
+  .nav-options {
+    list-style-type: none;
+    margin: 10px auto 15px;
+    display: table;
+    padding: 0;
+  }
+  .nav-options > li {
+    display: inline-block;
+      padding: 0 15px;
+      font-size: 22px;
+      color: #CCCCCC;
+      border-left: 1px solid #ccc;
+  }
+  .nav-options > li:last-child {
+      border-right: 1px solid #ccc;
+  }
+  .app-image {
+    display: table;
+      margin: 0 auto;
+  }
+  #content-logo {
+    padding: 0 0 50px;
+  }
+  #content-logo-bol {
+    padding: 0 0 50px;
+  }
+  #content-logo, #navigator, #content-logo-bol {
+    background : #F7F7F7;
+  }
+  #content-logo article, #content-logo-bol article{
+    margin:20px 0;
+  }
+  #content-logo p, #content-logo-bol p {
+    font-family: 'Roboto-Light';
+    color: #999999;
+    font-size: 18px;
+    line-height: 24px;
+    padding-right: 16px;
+  }
+  #content-logo h3, #content-logo-bol h3{
+    color: #EE2B7B;
+    font-family: 'gotham';
+    font-size: 18px;
+  }
+
+  #navigator {
+    padding: 50px 0 0;
+  }
+  #navigator .hw-hr-line {
+    margin-left: 0;
+    margin: 10px 0;
+    width: 20%;
+  }
+  #navigator .col-sm-8{
+  text-align:left;
+  }
+  #navigator .col-sm-8 h1{
+    font-size: 28px;
+    font-family: 'gotham';
+    margin-top: 18px;
+    margin-bottom: 10px;
+  }
+  #navigator .col-sm-8 h2{
+    font-size: 22px;
+    margin-top: 0px;
+    font-family: gotham;
+  }
+  #navigator ul li a {
+    color: #E4E3E1;
+    z-index: 2;
+  }
+  #navigator ul li a:hover {
+    color: #ee2b7b;
+  }
+  @media screen and (max-width: 1200px) {
+    div#shell {
+      left: 25%;
+    }
+    #port-bol-banner div#shell {
+      left: 42%;
+    }
+  }
+  @media screen and (max-width: 1150px) {
+    div#shell {
+      left: 22%;
+    }
+    #port-bol-banner div#shell {
+      left: 40%;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    div#shell {
+    margin: 60px auto;
+    left: 14%;
+    }
+
+    #port-bol-banner div#shell {
+      margin: 60px auto;
+    }
+    img#plax-sphere-1 {
+      height: 300px;
+      left: -83px;
+      top: 25px;
+      width: 700px;
+    }
+    img#plax-sphere-2 {
+      height: 351px;
+      left: -22px;
+      top: -22px;
+      width: 700px;
+    }
+    img#plax-sphere-3 {
+      height: 300px;
+      left: 39px;
+      top: 25px;
+      width: 700px;
+    }
+    .grey-top-port {
+      margin-top: -143px;
+    }
+  }
+  @media screen and (max-width: 843px) {
+    img#plax-sphere-1 {
+      height: 280px;
+      left: -79px;
+      top: 25px;
+      width: 600px;
+    }
+    img#plax-sphere-2 {
+      height: 332px;
+      left: -22px;
+      top: -22px;
+      width: 600px;
+    }
+    img#plax-sphere-3 {
+      height: 280px;
+      left: 39px;
+      top: 25px;
+      width: 600px;
+    }
+    .grey-top-port {
+      margin-top: -162px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #navigator .col-sm-8, #content-logo h3, #content-logo p, #content-logo-bol h3, #content-logo-bol p {
+    text-align:center;
+    }
+    div#shell, #port-bol-banner div#shell {
+      position: inherit;
+    }
+    #navigator .col-sm-8 h1 {
+      font-size: 22px;
+    }
+    #navigator .col-sm-8 h2 {
+      font-size: 20px;
+    } 
+    #content-logo p, #content-logo-bol p {
+      font-size: 16px;
+    }
+    #navigator .hw-hr-line {
+      margin: 10px auto 10px;
+    }
+    .btn-bolt, .btn-health {
+      display: table;
+    }
+
+    #footer {
+      margin-top: -159px;
+      padding: 175px 0 10px;
+    }
+    img#plax-sphere-2 {
+      width: auto;
+      height: 270px;
+      position: initial;
+      margin: 0 auto;
+    }
+    #port-bol-banner img#plax-sphere-2 {
+      height: 355px;
+      position: inherit;
+      width: auto;
+    }
+    #port-ticketnew-banner, 
+    #port-think-and-learn-banner, 
+    #port-healthcare-banner {
+      height: 420px;
+    }
+    div#shell {
+      margin: 35px auto;
+      position: initial;
+      display: table;
+    }
+    #port-bol-banner div#shell {
+      margin: 60px auto;
+      display: table;
+    }
+  }
+  /*Media query for portfolio page*/
+
+  @media screen and (max-width:500px){
+    #navigator .col-sm-8{
+    text-align:center;
+    }
+    #navigator .col-sm-8 h1 {
+      font-size: 20px;
+    }
+    #content-logo p, #content-logo-bol p {
+      font-size: 14px;
+    }
+    #navigator .col-sm-8 h2 {
+      font-size: 18px;
+    }
+    img#plax-sphere-2 {
+      height: 200px;
+    }
+    div#shell, 
+    #port-bol-banner div#shell {
+      margin: 64px auto;
+    }
+    #port-bol-banner img#plax-sphere-2 {
+      height: 333px;
+    }
+    .grey-top-port {
+      margin-top: -188px;
+    }
+  }
+  /*End of portfolio-page*/
+  /*----------------------------------------------------------------------
+  portfolio pages
+  -----------------------------------------------------------------------*/
+
+/*End of customer happiness section*/

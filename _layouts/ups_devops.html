@@ -1,0 +1,478 @@
+{% include header.html %}
+<div id="ups-devops">
+<!-- ups-devops carousel -->
+
+<div class="devops-img-header"><img src="/assets/img/arrows.png" class="devopss-fa-arrow-left devopss-fa-arrow-left1" alt="arrow"></div>
+	<h1 class="text-center gotham-rounded-bok heading hw-carousel-heading devops-heading"> <img src="/assets/img/arrows.png" alt="arrow" class="devopss-fa-arrow-left devopss-fa-arrow-left1">
+<span>Devops</span></h1>
+   		<div class="carousel-padding">
+		   	<div class="line"></div>
+			<div id="hw-upskilling" class="carousel slide upskilling-carousel" data-ride="carousel" data-interval="false">
+
+		   		<div class="container heading-caro-padd">
+				    <!-- Wrapper for slides -->
+				    <div class="carousel-inner" role="listbox">
+				    	 {% for cont in site.data.Portfolio.carousel.carousel_content%}
+					       {% if forloop.first %}
+					  	<div class="item active">
+					      <p class=" gotham-rounded-bok hw-para">
+					       {{ cont.content}}
+					      </p>
+					      <!-- <div class="hr-display">
+					      	<button class="custom-btn text-uppercase">Casestudies</button>
+					      	<button class="custom-btn text-uppercase">Blogs</button>
+					      </div> -->
+					    </div>
+						{% else %}
+					   <div class="item">
+					       <p class=" gotham-rounded-bok hw-para">
+					       		 {{ cont.content}}
+					      	</p>
+					      	<div class="hr-display">
+					      	<button class="custom-btn text-uppercase">Casestudies</button>
+					      	<button class="custom-btn text-uppercase">Blogs</button>
+					      </div>
+					    </div>
+						{% endif %}
+					    {% endfor %}
+				    </div>
+				</div>
+			</div>
+	 	</div>
+	<!-- end of carousel-->
+<!-- End of upskilling carousel -->
+
+<!--tabs-->
+	<div class="bs-example line-padding">
+			<div class="container devops-container">
+
+		    <ul class="nav nav-tabs p-flex devops-nav-tabs">
+		    <div class="carousel-div">
+		        <li id="tab-1" class="active c-flex devops-c-flex tab-val pvh-active"><a class="hr-display"  data-toggle="tab" href="#introduction" >
+		        	<ul class="tab-img">
+		        		<li  class="li-tab-mar  li-second"><img src="/assets/img/upskilling/upskilling-tabs/Introduction.svg" alt="introduction"></li>
+		        		<li class="gotham-rounded-light text-center devops-para"><p class="text-center">Introduction</p></li>
+					</ul></a>
+				</li>
+		        
+		        <li id="tab-2" class="c-flex devops-c-flex tab-val"><a  class="hr-display" data-toggle="tab" href="#objectives" >
+		        	<ul class="tab-img">
+		        		<li class="li-tab-mar li-second"><img src="/assets/img/upskilling/upskilling-tabs/Objective.svg" alt="objective"></li>
+		        		<li class="gotham-rounded-light text-center devops-para"><p>Objectives</p></li>
+					</ul></a>
+		        </li>
+
+		        <li id="tab-3" class="c-flex devops-c-flex tab-val"><a  class="hr-display" data-toggle="tab" href="#audience" >
+		        	<ul class="tab-img" >
+		        		<li class="li-tab-mar"><img src="/assets/img/upskilling/upskilling-tabs/Audience.svg" alt="audience"></li>
+		        		<li class="gotham-rounded-light text-center devops-para"><p>Audience</p></li>
+					</ul></a>
+		        </li>
+		        </div>
+		    </ul>
+
+		</div> <!--end of contaier-fuild of tab heading-->
+
+
+	    <div class="tab-content">
+
+	    	<!-- introduction -->
+
+		        <div id="tabContent-1" class="tab-pane fade in active">
+
+		        	<!-- container -->
+	    			<div class="container">
+			        	<div class="devops-cont devops-count">
+			        		<h3 class="hw-tab-heading gotham-rounded-bok devops-para devops-count1">Course Description</h3>
+			        		<p class="gotham-rounded-light hw-para devops-count-para">{{page.course_description}}
+							</p>
+			        	</div>
+			        </div>
+			        <!-- End of container -->
+				
+				</div>
+			<!-- End of introduction -->
+
+
+			<!-- objectives -->
+
+				<div id="tabContent-2" class="tab-pane fade in">
+
+					<!-- container -->
+						<div class="container">
+				        	<div class="devops-cont devops-count">
+				        		<h3 class="hw-tab-heading gotham-rounded-bok devops-para devops-count1">Learning Objectives</h3>
+				        		
+
+	<p class="gotham-rounded-light hw-para devops-count-para dev-devops-count-para">{{page.learning_objective.description}}</p>
+       <ul>
+	{%for point in  {{page.learning_objective.points}} %}
+	         
+				        			<li><p class="gotham-rounded-light hw-para devops-count-para devops-count-para1">
+                {{point}}
+            </p>
+        </li>
+	    {%endfor%}
+
+</ul>
+    
+
+				        		
+				        	</div>
+				        </div>
+			        <!-- End of container -->
+				
+				</div>
+
+			<!-- End of objectives -->
+
+
+			<!-- objectives -->
+
+				<div id="tabContent-3" class="tab-pane fade in">
+
+					<!-- audience -->
+						<div class="container">
+				        	<div class="devops-cont devops-count">
+				        		<h3 class="hw-tab-heading gotham-rounded-bok devops-para devops-count1">Audience</h3>
+				        		<ul>
+				        			{%for audience in page.audience%}
+				        			<li><p class="gotham-rounded-light hw-para devops-count-para devops-count-para1">{{audience}}</p></li>
+				        			{%endfor%}
+				        		</ul>
+				        	</div>
+				        </div>
+			        <!-- End of container -->
+				
+				</div>
+
+			<!-- End of audience -->
+
+
+		</div>
+	   	<!-- end of tab1 -->
+
+	   		
+	</div>
+	<!-- end of tabs-->
+
+
+<!-- Course Details -->
+	<div class="client-backgrnd hw-works ups-hw-works">
+		<h2 class="gotham-rounded-bok hw-heading text-center h2-color devops-course-heading">Course Details</h2>
+		
+		<!-- container -->
+			<div class="container">
+				<div class="panel-group devops-panel-group" id="upskill-accordion">
+				  <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+				    <div class="panel-heading">
+				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
+				        <a class=" pull-left gotham-rounded-bok">
+				          {{page.topic}} Introduction & Overview
+				        </a><i class="indicator pull-right">
+				        <span><i class="fa fa-caret-right devops-fa-caret-right"></i> <i class="fa fa-angle-right devops-fa-angle-right"></i></span>
+						</i>
+				      </h4>
+				    </div>
+				    <div id="collapseOne" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        <ul>
+				        	{%for course_description in page.Course_Details.Introduction_Overview%}
+		        			<li><p class="gotham-rounded-light hw-para devops-hw-para">{{course_description}}</li>
+		        			{%endfor%}
+		        		</ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+				    <div class="panel-heading">
+				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
+				        <a class=" pull-left gotham-rounded-bok">
+				           DevOps Challenges
+				        </a>
+				        <i class="indicator pull-right">
+				        <span><i class="fa fa-caret-right devops-fa-caret-right"></i> <i class="fa fa-angle-right devops-fa-angle-right"></i></span>
+						</i>
+				      </h4>
+				    </div>
+				    <div id="collapseTwo" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        <ul>
+				        	{%for challenges in page.Course_Details.challenges%}
+		        			<li><p class="gotham-rounded-light hw-para devops-hw-para">{{challenges}}</p></li>
+		        			{%endfor%}
+		        		</ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+				    <div class="panel-heading"> 
+				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
+				        <a class=" pull-left gotham-rounded-bok" >
+				          Methods & Tools to Principles & Mind-set
+				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right devops-fa-caret-right"></i> <i class="fa fa-angle-right devops-fa-angle-right"></i></span>
+						</i>
+				      </h4>
+				    </div>
+				    <div id="collapseThree" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        <ul>
+				        	{%for methods in page.Course_Details.methods_tools%}
+		        			<li><p class="gotham-rounded-light hw-para devops-hw-para">{{methods}}</p></li>
+		        			{%endfor%}
+		        		</ul>
+				      </div>
+				    </div>
+				  </div>
+				  		  <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+				    <div class="panel-heading">
+				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
+				        <a class=" pull-left gotham-rounded-bok" >
+				         Prescriptive Vs Adaptive process
+				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right devops-fa-caret-right"></i> <i class="fa fa-angle-right devops-fa-angle-right"></i></span>
+						</i>
+				      </h4>
+				    </div>
+				    <div id="collapseFour" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        <ul>
+				        	{%for adaptive in page.Course_Details.Prescriptive_Adaptive_process%}
+		        			<li><p class="gotham-rounded-light hw-para devops-hw-para">{{adaptive}}</p></li>
+		        			{%endfor%}
+		        		</ul>
+				      </div>
+				    </div>
+				  </div>
+				   <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+				    <div class="panel-heading">
+				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
+				        <a class=" pull-left gotham-rounded-bok" >
+				         Level of Abstraction Vs Cost of Ops
+				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right devops-fa-caret-right"></i> <i class="fa fa-angle-right devops-fa-angle-right"></i></span>
+						</i>
+				      </h4>
+				    </div>
+				    <div id="collapseFive" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        <ul>
+				        	{%for adaptive in page.Course_Details.Level_of_Abstraction%}
+		        			<li><p class="gotham-rounded-light hw-para devops-hw-para">{{adaptive}}</p></li>
+		        			{%endfor%}
+		        		</ul>
+				      </div>
+				    </div>
+				  </div>
+				   <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+				    <div class="panel-heading">
+				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
+				        <a class=" pull-left gotham-rounded-bok" >
+				         Project Management
+				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right devops-fa-caret-right"></i> <i class="fa fa-angle-right devops-fa-angle-right"></i></span>
+						</i>
+				      </h4>
+				    </div>
+				    <div id="collapseSix" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        <ul>
+				        	{%for adaptive in page.Course_Details.Project_Management%}
+		        			<li><p class="gotham-rounded-light hw-para devops-hw-para">{{adaptive}}</p></li>
+		        			{%endfor%}
+		        		</ul>
+				      </div>
+				    </div>
+				  </div>
+				  	   <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+				    <div class="panel-heading">
+				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
+				        <a class=" pull-left gotham-rounded-bok" >
+				         Version Control & Configuration Management
+				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right devops-fa-caret-right"></i> <i class="fa fa-angle-right devops-fa-angle-right"></i></span>
+						</i>
+				      </h4>
+				    </div>
+				    <div id="collapseSeven" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        <ul>
+				        	{%for adaptive in page.Course_Details.Version_Control%}
+		        			<li><p class="gotham-rounded-light hw-para devops-hw-para">{{adaptive}}</p></li>
+		        			{%endfor%}
+		        		</ul>
+				      </div>
+				    </div>
+				  </div>
+				   <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
+				    <div class="panel-heading">
+				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
+				        <a class=" pull-left gotham-rounded-bok" >
+				         Continuous_Integration
+				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right devops-fa-caret-right"></i> <i class="fa fa-angle-right devops-fa-angle-right"></i></span>
+						</i>
+				      </h4>
+				    </div>
+				    <div id="collapseEight" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        <ul>
+				        	{%for adaptive in page.Course_Details.Continuous_Integration%}
+		        			<li><p class="gotham-rounded-light hw-para devops-hw-para">{{adaptive}}</p></li>
+		        			{%endfor%}
+		        		</ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">
+				    <div class="panel-heading">
+				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
+				        <a class=" pull-left gotham-rounded-bok" >
+				         Infrastructure Automation
+				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right devops-fa-caret-right"></i> <i class="fa fa-angle-right devops-fa-angle-right"></i></span>
+						</i>
+				      </h4>
+				    </div>
+				    <div id="collapseNine" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        <ul>
+				        	{%for adaptive in page.Course_Details.Infrastructure_Automation%}
+		        			<li><p class="gotham-rounded-light hw-para devops-hw-para">{{adaptive}}</p></li>
+		        			{%endfor%}
+		        		</ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">
+				    <div class="panel-heading">
+				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
+				        <a class=" pull-left gotham-rounded-bok" >
+				         Deployment Automation
+				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right devops-fa-caret-right"></i> <i class="fa fa-angle-right devops-fa-angle-right"></i></span>
+						</i>
+				      </h4>
+				    </div>
+				    <div id="collapseTen" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        <ul>
+				        	{%for adaptive in page.Course_Details.Deployment_Automation%}
+		        			<li><p class="gotham-rounded-light hw-para devops-hw-para">{{adaptive}}</p></li>
+		        			{%endfor%}
+		        		</ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">
+				    <div class="panel-heading">
+				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
+				        <a class=" pull-left gotham-rounded-bok" >
+				        Monitoring
+				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right devops-fa-caret-right"></i> <i class="fa fa-angle-right devops-fa-angle-right"></i></span>
+						</i>
+				      </h4>
+				    </div>
+				    <div id="collapseEleven" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        <ul>
+				        	{%for adaptive in page.Course_Details.Monitoring%}
+		        			<li><p class="gotham-rounded-light hw-para devops-hw-para">{{adaptive}}</p></li>
+		        			{%endfor%}
+		        		</ul>
+				      </div>
+				    </div>
+				  </div>
+				</div><!--end-->
+
+			</div>
+			<!-- End of container -->
+
+				
+			</div>
+		<!-- End of course-details -->
+
+
+		<!-- Testimonial -->
+			<section id="testimonial">
+				<div class="container">
+					<center class="devops-center">
+						<!--Testimonial quotes icon-->
+						<span class="hw-sprite hw-test-quotes">
+							<svg version="1.1" id="Layer_1" x="0px" y="0px"
+								 width="60px" height="60px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve">
+							<g>
+								<path fill="#4EACDB" d="M18.743-0.026c0,0-8.616,4.209-18.092,29.462L0.451,60l23.173-0.822l-0.287-29.181l-11.198-0.281
+									c0,0,0.574-13.749,12.06-24.69L18.743-0.026z"/>
+								<path fill="#4EACDB" d="M54.55-0.026c0,0-8.44,4.209-17.722,29.462L36.631,60l22.7-0.822l-0.279-29.181L48.08,29.716
+									c0,0,0.563-13.749,11.814-24.69L54.55-0.026z"/>
+							</g>
+							</svg>
+						</span>
+					</center>
+						
+					<!-- Testimonial Carousel -->
+					<div class="test-carousel">
+						<div id="tCarousel" class="carousel slide" data-interval="8000" data-ride="carousel" style="display:block">
+							<div class="carousel-inner carousel-inner1">
+								<div class="active item">
+									<!-- <p class="hw-test-txt devops-hw-test-txt1">&ldquo;Hashworks team has been helping us in our web development needs and we are very excited that we found the right development partner. They have expert web development team who are great fun to work with. We are currently building few amazing products together and see good partnership ahead.&rdquo;</p> -->
+									<div class="hw-test-img hr-display clearfix">
+										<span class="img-outer"><img class="usr-pic" src="/assets/img/upskilling/testimonial/suman.jpg" alt="Suman Varanasi"></span>
+										<ul>
+											<li><p class="hw-usr-name devops-hw-usr-name">Suman <span>Varanasi</span></p></li>
+											<li><p class="hw-usr-des devops-hw-usr-des">COO - <span><a href="http://www.mobileways.in" target="_blank">MobileWays</a></span></p></li>
+										</ul>
+									</div>
+									<p class="hw-test-txt devops-hw-test-txt">&ldquo;Hashworks team has been helping us in our web development needs and we are very excited that we found the right development partner. They have expert web development team who are great fun to work with. We are currently building few amazing products together and see good partnership ahead.&rdquo;</p>
+								</div>
+								<div class="item">
+									<!-- <p class="hw-test-txt devops-hw-test-txt1">&ldquo;Pixel perfect websites are not a myth anymore, 
+									at least in case of Codetag who are also our development partners. They have 
+									a strong web development practice and their developers do a darn good job at converting our complex designs into a reality, that is why our designers love working with them.&rdquo;</p> -->
+									<div class="hw-test-img hr-display clearfix">
+										<span class="img-outer" ><img class="usr-pic" src="/assets/img/upskilling/testimonial/suman.jpg" alt="Suman Varanasi"></span>
+										<ul>
+											<li><p class="hw-usr-name devops-hw-usr-name">Suman <span>Varanasi</span></p></li>
+											<li><p class="hw-usr-des devops-hw-usr-des">COO - <span><a href="http://www.mobileways.in" target="_blank">MobileWays</a></span></p></li>
+										</ul>
+									</div>
+									<p class="hw-test-txt devops-hw-test-txt">&ldquo;Hashworks team has been helping us in our web development needs and we are very excited that we found the right development partner. They have expert web development team who are great fun to work with. We are currently building few amazing products together and see good partnership ahead.&rdquo;</p>
+								</div>
+								<div class="item">
+									<!-- <p class="hw-test-txt devops-hw-test-txt1">&ldquo;I have worked closely with the guys at Codetag 
+									for several projects.The best thing about Codetag is that it lives by it's values- customer first and perfect delivery.&rdquo;</p> -->
+									<div class="hw-test-img hr-display clearfix">
+										<span class="img-outer"><img class="usr-pic" src="/assets/img/upskilling/testimonial/suman.jpg" alt="Suman Varanasi"></span>
+										<ul>
+											<li><p class="hw-usr-name devops-hw-usr-name">Suman <span>Varanasi</span></p></li>
+											<li><p class="hw-usr-des devops-hw-usr-des">COO - <span><a href="http://www.mobileways.in" target="_blank">MobileWays</a></span></p></li>
+										</ul>
+									</div>  
+									<p class="hw-test-txt devops-hw-test-txt">&ldquo;I have worked closely with the guys at Codetag 
+									for several projects.The best thing about Codetag is that it lives by it's values- customer first and perfect delivery.&rdquo;</p>
+								</div>
+							</div>
+
+							<!-- Carousel nav -->
+							<a class="carousel-control left" href="#tCarousel" data-slide="prev">
+								<i class="fa fa-angle-left fa-3x"></i>
+							</a>
+							<a class="carousel-control right" href="#tCarousel" data-slide="next">
+								<i class="fa fa-angle-right fa-3x"></i>
+							</a>
+							<!-- Carousel nav -->
+
+						</div>
+					</div>
+					<!-- Testimonial Carousel -->
+
+				</div>
+			</section>
+		<!-- End of testimonial -->
+
+
+{% include ribbon-footer1.html %}
+{% include thankyou.html %}
+</div>
+
+
+
+
+
+
+{% include footer.html %}
+{% include html-footer.html %}

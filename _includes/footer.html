@@ -1,0 +1,37 @@
+
+
+    {% if page.layout == "default" %}
+      <footer class="hw-home-footer">
+      {% else %}    
+      <footer>
+    {% endif %}
+        <div class="container-fluid">
+            <div class="row footer">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 hw-copyright">
+                    <p class="gotham-rounded-light foot-text-color">{{ site.data.global.footer_text }}</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 social-share">
+                  <a href="https://www.facebook.com/hashworks/" class="fa-stack hw-socialshare social-icons"  target="_blank">
+                  <!-- <span > -->
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x"></i>
+                  <!-- </span> -->
+                  </a>
+                  <a href="https://twitter.com/hashworksco" class="fa-stack hw-socialshare social-icons" target="_blank">
+                  <!-- <span > -->
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x"></i>
+                  <!-- </span> -->
+                  </a>
+                  <a href="https://www.linkedin.com/company/9228490" class="fa-stack hw-socialshare social-icons" target="_blank">
+                  <!-- <span > -->
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x"></i>
+                  <!-- </span> -->
+                     </a>
+                </div>
+            </div>
+        </div>
+      </footer>
+ 
+</div>

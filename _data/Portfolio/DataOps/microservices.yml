@@ -1,0 +1,4 @@
+title: 'Microservices Architecture'
+content: 'MSA is an emerging architectural pattern for building distributed applications that support Bimodal architecture with different capability views. One that responds quickly to business needs & the other providing stable, secure & predictable IT service. Business success requires strong capability to  achieve Shorter time-to-market, seamless omni-channel experience, gaining consumer insights & automated service delivery. MSA delivers the capacity to build an application ecosystem capable of being agile, flexible and scalable.'
+testimonial:
+    - { testimony: 'Netflix receives nearly two-billion requests each day resulting in roughly 20 billion internal API calls.',name: 'Wikipedia' }

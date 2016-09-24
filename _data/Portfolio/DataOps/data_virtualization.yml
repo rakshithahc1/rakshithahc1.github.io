@@ -1,0 +1,6 @@
+title: 'Data Virtualization'
+content: 'With the proliferation of Data Explosion, disparate data silos, greater automation there is a need for a data service layer to support information agility. The IT teams should be able to access data in real-time or near-real time from asymmetric data sources, on premise or cloud for business transactions, analytics & other payloads as a self-service data platform. Information agility is a catalyst for growth, innovation and efficiency for organizations. DV leverages modern computing capabilities with traditional data integration techniques to deliver self-service access to real-time data at a lower cost with more speed & agility.'
+testimonial:
+    - { testimony: 'Consumer data will be the biggest differentiator in the next two to three years. Whoever unlocks the reams of data and uses it strategically will win.',name: 'Angela Ahrendts',role: 'CEO of Burberry' }
+
+

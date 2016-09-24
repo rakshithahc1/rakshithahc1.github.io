@@ -1,0 +1,200 @@
+ .devopss-fa-arrow-left{
+ 	display: none;
+ }
+ .fa.fa-angle-right.devops-fa-angle-right {
+    display: none;
+}
+@media screen and (max-width: 1199px) {
+	.devops-heading{
+		font-size: 32px;
+		font-family:"gotham-rounded-light";
+		margin-top: 55px;
+		margin-bottom: 14px;
+	}
+	.devops-nav-tabs{
+		margin-top: 32px;
+		margin-bottom: 25px;
+		width: 100%;
+	}
+	.devops-c-flex{
+		width: 33%;
+	}
+	#ups-devops .devops-para{
+		color: #000;
+		font-size: 20px;
+	}
+	.devops-count{
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.hw-tab-heading.gotham-rounded-bok.devops-para.devops-count1{
+ 		margin-bottom: 7px;
+ 		margin-top: 0;
+ 	}
+ 	.gotham-rounded-light.hw-para.devops-count-para {
+    color: #000;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.gotham-rounded-bok.hw-heading.text-center.h2-color.devops-course-heading {
+    color: #000;
+    margin-top: 20px;
+	font-family:"gotham-rounded-light";
+	padding-top: 26px;
+	margin-bottom: 5px;
+}
+#ups-devops .devops-panel-group{
+	margin: 0;
+}
+#ups-devops .panel-title.clearfix.header-links.upskilling-ani.devops-upskilling-ani {
+    color: #343434;
+    font-size: 14px;
+    padding: 0;
+}
+.devops-hw-para{
+	 color: #343434;
+    font-size: 14px;
+}
+.fa.fa-caret-right.devops-fa-caret-right {
+    display: none;
+}
+.fa.fa-angle-right.devops-fa-angle-right {
+    color: #000;
+    font-size: 26px;
+}
+.devops-center{
+	display: none;
+}
+#ups-devops .devops-hw-test-txt1{
+	display: none;
+}
+#ups-devops #testimonial .hw-test-img .img-outer, #testimonial .hw-test-img ul {
+    display: block;
+    }
+    .ups-hw-works{
+    	padding-bottom: 24px;
+    }
+#ups-devops #testimonial {
+    padding-top: 7px;
+}
+#ups-devops .devops-hw-usr-des,#ups-devops .devops-hw-test-txt{
+	color: #343434;
+	font-size: 18px;
+	font-family:"gotham-rounded-light";
+}
+#ups-devops .devops-hw-usr-name{
+	color: #343434;
+	font-size: 16px;
+	font-family:"gotham-rounded-light";
+}
+#ups-devops .hw-test-txt {
+    height: 0;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+}
+#ups-devops #upskill-accordion .panel-heading {
+    border-bottom: 1px solid #343434;
+}
+#ups-devops .fa-3x{
+	color: #343434;
+}
+}
+@media screen and (max-width: 767px) {
+    .devopss-fa-arrow-left {
+    cursor: pointer;
+}
+#ups-devops .fa-3x {
+    font-size: 1em;
+}
+#ups-devops .gotham-rounded-light.hw-main-heading.clr-white.h-approch{
+    font-size: 11px;
+}
+#ups-devops .text-uppercase.custom-btn.heading-custom-btn.talk-to-us{
+    font-size: 12px;
+    font-family: "gotham-rounded-book";
+}
+#ups-devops .li-tab-mar > img {
+    width: 70%;
+}
+.devops-heading {
+    background-color: #adabab;
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px 0;
+}
+#ups-devops .carousel-padding {
+    display: none;
+}
+.devops-nav-tabs {
+    margin-top: 0;
+    }
+    #ups-devops .devops-para {
+    font-size: 10px;
+}
+#ups-devops .nav > li > a {
+    padding: 24px 0 0;
+}
+.li-tab-mar > img {
+    margin-bottom: 12px;
+}
+#ups-devops .devops-count1 {
+    font-size: 14px;
+    text-align: center;
+}
+.gotham-rounded-light.hw-para.devops-count-para {
+    font-size: 10px;
+    text-align: center;
+}
+#ups-devops .bs-example.line-padding {
+    background-color: #fafafa;
+    padding-bottom: 20px;
+}
+#ups-devops .client-backgrnd {
+    background-color: #f0efef;
+    margin-top: 0;
+ }
+ .gotham-rounded-bok.hw-heading.text-center.h2-color.devops-course-heading {
+ 	font-size: 14px;
+ 	margin-bottom: 12px;
+ 	margin-top: 0;
+}
+#ups-devops .panel-title.clearfix.header-links.upskilling-ani.devops-upskilling-ani {
+	font-size: 11px;
+	}
+	.fa.fa-angle-right.devops-fa-angle-right {
+    font-size: 18px;
+}
+#ups-devops .devops-hw-usr-des,#ups-devops .devops-hw-test-txt{
+	font-size: 8px;
+	line-height: 14px;
+}
+#ups-devops .devops-hw-usr-name{
+	font-size: 10px;
+}
+#ups-devops .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	background-color: transparent;
+}
+#ups-devops #testimonial {
+    padding-bottom: 25px;
+    }
+ #ups-devops .clearfix {
+    padding: 0;
+}
+#ups-devops .gotham-rounded-light.hw-para.devops-count-para.devops-count-para1{
+text-align: inherit;
+}
+#ups-devops #upskill-accordion .panel-body p {
+	font-size: 11px;
+}
+#ups-devops .panel-body {
+    padding-left: 20px;
+    }
+    .devopss-fa-arrow-left{
+    	display: block;
+    	color: #fff;
+    	float: left;
+    	margin-left: 20px;
+    }
+}

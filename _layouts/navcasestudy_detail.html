@@ -1,0 +1,84 @@
+{% include header.html %}
+<main>
+	<section class="banner section_casestudy">
+		<div class="casestudy-img">
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="columns-12">
+
+						<div class="banner-outer">
+
+							<div class="banner-inner">
+								
+
+								<h1 class="clr-white">{{page.title}} </h1>
+
+								
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Problem Statement -->
+			<div class="container">
+				<div class="columns-8 column-center">
+					<h1 class="text-uppercase hw-heading">Problem Statement</h1>
+					<p class="hw-para gotham-rounded-bok">{{ page.problem_statement}} </p>
+				</div>
+			</div>
+		<!-- End of Problem Statement -->
+
+
+		<!-- objectives -->
+			<div class="container">
+					<div class="row">
+						<div class="row col-lg-8 col-lg-offset-3 col-md-8">
+								<div class="col-lg-6  col-md-6">
+									<h1 class="text-uppercase hw-heading">OBJECTIVES</h1>
+									<ul class="objectives casestudy-ul-det" type="square">
+
+										{% for objective in page.objectives %}
+										<li><p class="gotham-rounded-light hw-copyright clr-black">{{objective}}</p></li>
+										{% endfor %}
+									</ul>
+								</div>
+								<div class="col-lg-6 col-md-6">
+
+									<ul class="requirements casestudy-ul-det" type="circle">
+										
+									</ul> 
+								</div>
+						</div>
+					</div>
+			</div>
+		<!-- End of objectives -->
+
+		<!-- Approach -->
+			<div class="container">
+				<div class="columns-8 column-center">
+					<h1 class="text-uppercase hw-heading">Approach</h1>
+					<p class="hw-para gotham-rounded-bok">{{ page.approach}} </p>
+				</div>
+			</div>
+		<!-- End of Approach -->
+
+		<!-- Research -->
+			<div class="container">
+				<div class="columns-8 column-center">
+					<h1 class="text-uppercase hw-heading">Result</h1>
+					<p class="hw-para gotham-rounded-bok"> {{ page.results }}</p>
+				</div>
+			</div>
+		<!-- End of Research -->
+
+	</section>
+</main>	
+
+{% include footer.html %}

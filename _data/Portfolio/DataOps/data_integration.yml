@@ -1,0 +1,11 @@
+title: 'Data Integration'
+content: 'Data driven approach help businesses to gain greater transparency in the operations, enable better predictions and achieve delivery productivity & profit gains.  Data sourcing is a key capability for organizations to run business functions & to build analytics models for predicting & optimizing outcomes. Data integration techniques  identify, combine and manage multiple source of data. Sourcing relevant data from the system of record of different business functions & model building them will help companies to get a clear view of their business environment.'
+testimonial:
+    - { testimony: 'It is a capital mistake to theorize before one has data.',name: 'Arthur Conan Doyle',role: 'Sherlock Holmes'}
+    - { testimony: 'Torture the data and it will confess to anything',name: 'Ronald Coase',role: 'Nobel Prize Laureate' }
+    - { testimony: 'Those who do not remember the past are condemned to repeat it',name: 'George Santayana',role: 'Philosopher' }
+
+
+
+
+

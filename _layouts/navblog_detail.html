@@ -1,0 +1,143 @@
+{% include header.html %}
+<main>
+	<section class="banner section_casestudy">
+		<div class="for-blog-back-color banner-bg-desktop">
+			<img src="{{page.ribbon-img}}" alt="ribbon">
+			<img class="blog-profile-pic" src="{{page.profile_img}}" alt="blogprofile">
+		    <h1 class="clr-white gotham-rounded-bok blog-main-title">{{ page.category }}</h1>
+		</div>
+
+
+		
+		
+			<div class="container blog-details">
+
+				<div class="row">
+					<div class="col-lg-8  col-lg-offset-2 ">
+						
+						<div class="hr-display">
+							<!-- <h3 class="text-uppercase hw-socialshare cs-li-margin">The New User Experience</h3> -->
+							{% if {{page.imgsrc0}} == %}
+							{% else %}
+							<img class="hero-image-mob blog-ref-img blog-ref-img2" src="{{page.imgsrc0}}" alt="blogref">
+							{% endif %}
+							<br/>
+							<div class="blog-date">
+								{% assign dates = page.published-date | split: ' ' %}
+								<div class="date-bg">
+									{% for dat in dates | limit: 1 offset: 1 %}	
+									<span>{{ dat | split: ','}}</span>
+									{% endfor %}
+									{% for dat in dates | limit: 1 offset: 0 %}	
+									<span>{{ dat }}</span>
+									{% endfor %}
+								</div>
+							</div>
+							<div class="blog-tab-content">
+								<div class="blog-header">
+									<div class="ribon-font gotham-rounded-bok">{{page.blog_title}}</div>
+									<div class="blog-author"><span class="pb-by">Published By </span>{{page.author}}</div>
+									<div class="line"></div>
+								</div>
+								<hr class="desktop-blog-hr" />
+								<!-- <img  class="blog-ref-img" src="{{page.imgsrc1}}"> -->
+								<div class="blog-content">
+									<div class="hw-para text-justify gotham-rounded-light">{{page.para}}</div> 
+									
+									<!-- <img class="blog-ref-img" src="{{page.imgsrc}}"> -->
+									{% if {{page.imgsrc0}} == %}
+									{% else %}
+									<img  class="hero-image-desktop blog-ref-img blog-ref-img2" src="{{page.imgsrc0}}" alt="blogref">
+									<span class="blog-source">Picture source from: {{page.blog_source}}</span>
+									{% endif %}
+								
+									{% if {{page.para1}} == %}
+									{% else %}
+									<div class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para1}}</div> 
+									{% endif %}
+
+									{% if {{page.para2}} == %}
+									{% else %}
+									<div class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para2}}</div> 
+									{% endif %}
+
+									{% if {{page.para3}} == %}
+									{% else %}
+									<div class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para3}}</div> 
+									{% endif %}
+
+									{% if {{page.para4}} == %}
+									{% else %}
+									<div class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para4}}</div> 
+									{% endif %}
+
+									{% if {{page.para5}} == %}
+									{% else %}
+									<div class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para5}}</div> 
+									{% endif %}
+
+									{% if {{page.imgsrc1}} == %}
+									{% else %}
+									<img  class="blog-ref-img blog-ref-img2" src="{{page.imgsrc1}}" alt="blog-ref">
+									{% endif %}
+
+
+									{% if {{page.para6}} == %}
+									{% else %}
+									<div class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para6}}</div> 
+									{% endif %}
+
+									{% if {{page.para7}} == %}
+									{% else %}
+									<div class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para7}}</div> 
+									{% endif %}
+
+									{% if {{page.para8}} == %}
+									{% else %}
+									<div class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para8}}</div> 
+									{% endif %}
+
+									{% if {{page.para9}} == %}
+									{% else %}
+									<div class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para9}}</div> 
+									{% endif %}
+
+
+									{% if {{page.imgsrc2}} == %}
+									{% else %}
+									<img  class="blog-ref-img blog-ref-img2" src="{{page.imgsrc2}}" alt="blogref">
+									{% endif %}
+									
+								</div>
+							</div>
+						</div>
+					    <div class="comments col-testimoni">
+						     {%include disqus.html%}
+					    </div>
+
+					</div>
+				</div>
+
+			</div>
+		
+
+
+	</section>
+</main>	
+	<script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'hashworks'; // required: replace example with your forum shortname
+      // var disqus_developer = 1; // Comment out when the site is live
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname+'.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+      }());
+    </script>
+
+{% include ribbon-footer.html %}
+{% include footer.html %}
+{% include html-footer.html %}

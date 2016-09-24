@@ -1,0 +1,26 @@
+<svg id="blog-pencil-liquid" class="hr-display" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10%" height="42%" viewBox="0 0 156 500" enable-background="new 0 0 156 500" xml:space="preserve">
+							<image display="none" overflow="visible" width="800" height="600" transform="matrix(1 0 0 1 -322.9946 -56.9985)">
+							</image>
+							<path fill="none" stroke="#FEFEFE" stroke-width="5" stroke-miterlimit="10" d="M129.175,59.084
+								c27.711,11.336,27.711,29.718,0,41.054c-27.71,11.339-72.64,11.339-100.347,0c-27.714-11.336-27.714-29.718,0-41.054
+								C56.535,47.745,101.465,47.745,129.175,59.084z"/>
+
+							<circle id="pencil-bubble-1" fill="#1DD2D6" cx="39.641" cy="28.563" r="10.062"/>
+							<circle id="pencil-bubble-2" fill="#1DD2D6" cx="61.65" cy="80.554" r="9.749"/>
+							<circle id="pencil-bubble-3" fill="#1DD2D6" cx="80.67" cy="74.506" r="8.086"/>
+							<circle id="pencil-bubble-4" fill="#1DD2D6" cx="120.916" cy="130.149" r="11.694"/>
+
+							<path fill="#1DD2D6" d="M19.89,190.696L18.933,353.77c0,0,68.067,30.35,120.794-2.517l1.532-162.286"/>
+							<polyline fill="#E3E5E5" stroke="#A7A8A8" stroke-miterlimit="10" points="80.5,367 80.5,492.084 138.837,354.385 "/>
+							<path id="pencil-liquid1" fill="#1DD2D6" d="M139.667,191.618c0,0-14.163-25.425-33.263-25.425c-19.101,0-29.445,20.778-35.414,25.076L139.667,191.618z"
+								/>
+							<path id="pencil-liquid2" fill="#1DD2D6" d="M86.667,191.618c0,0-14.163-25.425-33.263-25.425c-19.101,0-29.445,20.778-35.414,25.076L86.667,191.618z"/>
+							<path fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" d="M140.5,352.211V97.988c0,0-67,26.035-123-1.532
+								v255.754C17.5,352.211,68.5,384.372,140.5,352.211z"/>
+							<line fill="none" stroke="#FEFEFE" stroke-width="5" stroke-miterlimit="10" x1="56.5" y1="213" x2="56.5" y2="364"/>
+							<line fill="none" stroke="#FEFEFE" stroke-width="5" stroke-miterlimit="10" x1="99.5" y1="258" x2="99.5" y2="365"/>
+							<path fill="none" stroke="#FEFEFE" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" d="M140.406,354.649
+								L84.337,487.978c-2.446,5.734-6.404,5.734-8.845,0L17.89,354.649"/>
+							<path stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" d="M94.932,463.242l-10.595,25.247
+								c-2.446,5.733-6.404,5.733-8.845,0l-10.807-24.864L94.932,463.242z"/>
+							</svg>

@@ -1,0 +1,120 @@
+# Build settings
+
+markdown: kramdown
+permalink: pretty
+collections:
+  casestudy:
+     output: true
+     permalink: /casestudy/:path/
+  upskillingcs:
+     output: true,
+     permalink: /upskillingcs/:path/
+  jobboard:
+include: ["_pages"]
+prose:
+  media: 'assets/img/blog'
+  metadata:
+    _posts:
+      - name: "description"
+        field:
+          label: "Description"
+          element: "textarea"
+          placeholder: "Enter a Description"
+      - name: "title"
+        field:
+          label: "Title"
+          element: "text"
+          value: "An awesome Headline!"
+      - name: "layout"
+        field:
+          label: "Layout"
+          element: "hidden"
+          value: "post"
+      - name: "category"
+        field:
+          label: "Category"
+          element: "text"
+          value: "All"
+      - name: "image"
+        field:
+          label: "Image Name"
+          element: "text"
+          value: "blog.jpg"
+      - name: "tags"
+        field:
+          label: "Tag"
+          element: "text"
+          value: "all"
+      - name: "published"
+        field:
+          label: "Published"
+          element: "checkbox"
+          value: "false"
+      - name: "author"
+        field:
+          label: "Author name"
+          element: "select"
+          value: "true"
+          options:
+             - name: 'Gopi'
+               value: 'Gopi'
+             - name: 'Palani'
+               value: 'Palani'
+             - name: 'Chandru'
+               value: 'Chandru'
+             - name: 'Keerthana'
+               value: 'Keerthana'
+    _casestudy:
+       - name: "category"
+         field:
+          label: "Category"
+          element: "select"
+          value: "true"
+          options:
+             - name: 'SOA'
+               value: 'SOA'
+             - name: 'Application Development'
+               value: 'Application Development'
+             - name: 'Micro Services'
+               value: 'Micro Services'
+             - name: 'ETL'
+               value: 'ETL'
+             - name: 'Devops'
+               value: 'Devops'
+             - name: 'Performance Engineering'
+               value: 'Performance Engineering'
+             - name: 'Test Automation'
+               value: 'Test Automation'
+             - name: 'Agile Testing'
+               value: 'Agile Testing'
+             - name: 'Visual Design'
+               value: 'Visual Design'
+             - name: 'Frontend Design'
+               value: 'Frontend Design'
+             - name: 'Data Visualisation'
+               value: 'Data Visualisation'
+             - name: 'Reporting and Dashboard'
+               value: 'Reporting and Dashboard'
+             - name: 'Consumer Apps'
+               value: 'Consumer Apps'
+             - name: 'Enterprise Mobility'
+               value: 'Enterprise Mobility'
+             - name: 'Operational Analytics'
+               value: 'Operational Analytics'
+             - name: 'Predictive Analysis'
+               value: 'Predictive Analysis'
+       - name: "name"
+         field:
+          label: "Title"
+          element: "text"
+          value: "Title"
+       - name: "layout"
+         field:
+          label: "Layout"
+          element: "hidden"
+          value: "case_study"
+       - name: "description"
+         field:
+          label: "Description"
+          element: "textarea"
+          placeholder: "Enter a Description"

@@ -1,0 +1,577 @@
+{% include header.html %}
+<div class="jb-desk-tab">
+<main>
+
+  <div class="super-job">
+    <img src="/assets/img/talent_acquisition/Super_Job_Banner.svg" id="super-job-img">
+                {% assign my_variable = 0 %}
+                {% assign items = site.jobboard | sort: 'date'| date: "%d-%m-%y"| reverse %}
+                {% for job in  items %}
+
+                {% if my_variable == 0 %}
+    <div id="latest1" class="common-position" >
+      <div class="hr-display latest-job">
+        <div class="job-date gotham-rounded-light clr-white">{{job.date | date: '%B %d, %Y'}}</div>
+        <div class="job-board-title gotham-rounded-bold hw-heading  clr-white">{{job.job_title}}</div>
+        <div class="job-exp gotham-rounded-bold hw-heading  clr-white">{{job.experience}} exp</div>
+        <div class="job-location gotham-rounded-light clr-white"><span><img src="/assets/img/talent_acquisition/location.png" alt="location" id="job-location-img"></span>{{job.location}}</div>
+      </div>
+    </div>
+    {% elsif my_variable == 1 %}
+    <div  id="latest2" class="common-position" >
+      <div class="hr-display latest-job">
+        <div class="job-date gotham-rounded-light clr-white">{{job.date | date: '%B %d, %Y'}}</div>
+        <div class="job-board-title gotham-rounded-bold hw-heading  clr-white">{{job.job_title}}</div>
+        <div class="job-exp gotham-rounded-bold hw-heading  clr-white">{{job.experience}} exp</div>
+        <div class="job-location gotham-rounded-light clr-white"><span><img src="/assets/img/talent_acquisition/location.png" id="job-location-img" alt="location"></span>{{job.location}}</div>
+      </div>
+    </div>
+    {% elsif my_variable == 2 %}
+    <div id="latest3" class="common-position" >
+      <div class="hr-display latest-job">
+        <div class="job-date gotham-rounded-light clr-white">{{job.date | date: '%B %d, %Y'}}</div>
+        <div class="job-board-title gotham-rounded-bold hw-heading  clr-white">{{job.job_title}}</div>
+        <div class="job-exp gotham-rounded-bold hw-heading  clr-white">{{job.experience}} exp</div>
+        <div class="job-location gotham-rounded-light clr-white"><span><img src="/assets/img/talent_acquisition/location.png" id="job-location-img" alt="location"></span>{{job.location}}</div>
+      </div>
+    </div>
+    {% elsif my_variable == 3 %}
+    <div id="latest4" class="common-position">
+      <div class="hr-display latest-job">
+        <div class="job-date gotham-rounded-light clr-white">{{job.date | date: '%B %d, %Y'}}</div>
+        <div class="job-board-title gotham-rounded-bold hw-heading  clr-white">{{job.job_title}}</div>
+        <div class="job-exp gotham-rounded-bold hw-heading  clr-white">{{job.experience}} exp</div>
+        <div class="job-location gotham-rounded-light clr-white"><span><img src="/assets/img/talent_acquisition/location.png" id="job-location-img" alt="location"></span>{{job.location}}</div>
+      </div>
+    </div>
+                    {% endif %}
+
+                {% assign assign my_variable = my_variable | plus:1  %}
+                {% endfor %}
+  </div>
+  <div class="jobs-tab-header">
+    <h1 class="text-center gotham-rounded-bok heading hw-font-heading"> Jobs for you </h1>
+    <div class="carousel-padding"> 
+        <div class="line"></div>
+    </div>
+  </div>
+  <div class="container jobs-tab-content">
+    <h2 class="gotham-rounded-bok h2-color hw-heading srch-heading">Search for a job</h2>
+    <div class="job-list-btn">
+      <span class="span-padding-rite">
+        <input type="text" class=" placeholder-pro keyword gotham-rounded-light  " placeholder="keyword eg.(job-title)" id="job-title">
+      </span>
+      <span class="span-padding-rite">
+        <input type="text" class=" placeholder-pro keyword gotham-rounded-light" placeholder="location eg.(city)" id="job-location">
+      </span>
+      <span class="span-padding-rite srch-job-btn"><button class="job-search serch-the-job">SEARCH FOR JOB</button></span>
+    </div>
+
+    <!-- table-wrapper -->
+    <div class="table-wrapper">
+  <table class="table   job-table" >
+    <thead>
+      <tr  data-value= "tr2">
+        <th class="gotham-rounded-bold hw-para">Jobs Title</th>
+        <th class="gotham-rounded-bold hw-para">Location</th>
+        <th class="gotham-rounded-bold hw-para">Posted On</th>
+        <th class="gotham-rounded-bold hw-para">Experience</th>
+        <th class="gotham-rounded-bold hw-para">Type</th>
+      </tr>
+    </thead>
+
+ 
+
+    <tbody>
+{% assign items = site.jobboard | sort: 'date'| date: "%d-%m-%y"| reverse %}    
+{% for job in  items %}
+        <tr class="job-list-item "  data-value= "tr2">
+            <td class="gotham-rounded-bok  hw-contact-no "> {{job.job_title}} </td>
+            <td class="gotham-rounded-bok  hw-contact-no log-color-blue">{{job.location}}</td>
+            <td class="gotham-rounded-bok  hw-contact-no">{{job.date | date: '%B %d, %Y'}}</td>
+            <td class="gotham-rounded-bok  hw-contact-no">{{job.experience}}</td>
+            <td class="gotham-rounded-bok  hw-contact-no full-time-job">{{job.type}}</td>
+            <td class="gotham-rounded-bok hw-contact-no hw-job1" ><span><i class="fa fa-search"></i></span><span class="view-act view-mar">View</span></td>
+          </tr>
+
+
+
+      <tr class=" hide view1">
+
+        <td class= "job-coll" colspan="8">
+
+          <div class="view">
+
+            <span class="view1-close view-close"><i class="fa fa-times"></i></span>
+
+            <h5 class="gotham-rounded-bold clr-black hw-copyright job-title-mar">Job Description</h5>
+            <ul>
+            {% for  job_descr in job.job_description %}
+              <li class="job-tab-li job-margin job-margin-2"><p class="gotham-rounded-bok vw-coll-line-height hw-contact-no hw-contact-no">{{job_descr}}</p></li>
+            {% endfor %}
+            </ul>
+
+            <h5 class="gotham-rounded-bold clr-black hw-copyright job-title-mar"> Responsibilities </h5>
+            <ul>
+            {% for  job_res in job.responsibilities %}
+              <li class="job-tab-li job-margin job-margin-2"><p class="gotham-rounded-bok vw-coll-line-height hw-contact-no hw-contact-no">{{job_res}}</p></li>
+            {% endfor %}
+            </ul>
+
+            <h5 class="gotham-rounded-bold clr-black hw-copyright job-title-mar">Skills</h5>
+            <ul>
+            {% for  job_skill in job.skills %}
+              <li class="job-tab-li job-margin job-margin-2"><p  class="gotham-rounded-bok vw-coll-line-height hw-contact-no hw-contact-no">{{job_skill}}</p></li>
+            {% endfor %}
+            </ul>
+            
+            <button class="apply gotham-rounded-bold" data-toggle="modal" data-target="#start-project">Apply Now</button>
+
+          </div> <!-- end of view --> 
+
+        </td><!-- end of td-->
+
+      </tr><!-- end of tr -->
+    {% endfor %}
+
+
+
+  </tbody>
+
+  </table>
+</div>
+
+    <div id="start-project" class="modal fade">
+          <div class="modal-dialog contact-modal">
+              <div class="modal-content">
+              <div class="container form-container">
+                    <span class="hm-contact"><i class="fa fa-mobile"></i><span class="hm-num gotham-rounded-light">+8861162420</span></span>
+          <img class="close-pop view1-close form-close" data-dismiss="modal" src="/assets/svg/close-pop.svg" alt="close">
+                    <h1 class="gotham-rounded-bold">Let's work together</h1>
+                    <hr>
+                    <div class="post-resume">
+                <form class="form-signin"  action="https://getsimpleform.com/messages?form_api_token=0081d68f31d313aaa86b262fda0a1849" method="post" enctype="multipart/form-data">  <!-- start of form -->
+                  <input type='hidden' name='redirect_to' value='http://hashworks.co/thankyou/'/>
+              <div class="row ">
+                  <div class="col-lg-6"> 
+                    <div class="text-border">
+                      <div class="input-group">
+                            <div class="input-group-addon"><img src="/assets/img/talent_acquisition/name-img.png" alt="name"></div>
+                            
+                        <input type="text" class="form-control placeholder-pro mainLoginInput input_name" id="name" placeholder="NAME" required>
+                      </div>
+                    </div>    
+                  </div>
+                
+                <div class="col-lg-6"> 
+                  <div class="text-border">
+                    <div class="input-group">
+                          <div class="input-group-addon"><img src="/assets/img/talent_acquisition/email-img.png" alt="email"></div>
+                      <input type="email" class="form-control placeholder-pro mainLoginInput input_email" id="email" placeholder="EMAIL" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row ms-row-mar">
+                <div class="col-lg-6"> 
+                  <div class="text-border">
+                    <div class="input-group">
+                    <div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png" alt="subject"></div>
+                      <input type="text" class="form-control placeholder-pro mainLoginInput gotham-rounded-light input_subject" id="subject" placeholder="Subject" required>
+                    </div> 
+                  </div>  
+                </div>
+                
+                <div class="col-lg-6"> 
+                  <div class="text-border">
+                    <div class="input-group">
+                          <div class="input-group-addon"><img src="/assets/img/talent_acquisition/phone-img.png" alt="phone"></div>
+                      <input type="text" class="form-control placeholder-pro mainLoginInput input_phone" id="phone" placeholder="PHONE" required>
+                    </div>
+                  </div>  
+                </div>
+              </div>
+
+              <div class="row ms-row-mar">
+                <div class="col-lg-12">
+                  <div class="text-border">
+                  <div class="input-group">
+                          <div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png" alt="message"></div>
+                          
+                          <textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro mainLoginInput input_message"  id="message" rows="3" required></textarea>
+                        </div>  
+                  </div>
+                </div>
+              </div><!-- end of text-area row-->
+
+              <div class="attach-file">
+                    <div class="col-lg-9 col-md-7 col-sm-7 col-xs-7">
+                      <input type="file" class="gotham-book input_file-upload" id="file-upload" required>
+                      <br/><br/>
+                      <span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png" alt="attach"></span><span class="gotham-rounded-bok attach-span clr-white">Attach File</span></span>
+                      <input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail" readonly="readonly"/>
+                    </div>
+                    <div class="col-lg-3 col-md-5 col-sm-5 col-xs-5 submit-background">
+                     
+                      <button id="submit-btn" type="submit" class="btn">
+              <br>
+              <span class="submit-resume hr-display" style="margin: 0px auto;">
+               <img src="/assets/img/talent_acquisition/submit.png" class="img-submit" alt="submit">
+               <span class="gotham-rounded-bok submit-text placeholder-pro img-para">SUBMIT</span>
+              </span>
+                      </button>
+                    </div>
+                  </div><!-- end of attach-file-->
+            </form> <!-- end of form -->
+            </div><!-- end of postresume -->
+            <div class="show-as-love"><!-- hm social icon-->
+          <div class="row">
+            <div class=" col-lg-offset-7 col-lg-5">
+              <div class="hm-shows-love">
+                <h1 class="gotham-rounded-bold hm-show-text hw-heading show-text1">Show us your <i class="fa fa-heart hm-show-heart"></i> </h1>
+                <div class= "hm-icons hm-form-val">
+                            <a href="https://www.facebook.com/hashworks/" class="fa-stack hw-socialshare social-icons" target="_blank">
+                              <i class="fa fa-circle-thin fa-stack-2x"></i>
+                              <i class="fa fa-facebook fa-stack-1x"></i>
+                            </a>
+                            <a href="https://twitter.com/hashworksco" class="fa-stack hw-socialshare social-icons" target="_blank">
+                              <i class="fa fa-circle-thin fa-stack-2x"></i>
+                              <i class="fa fa-twitter fa-stack-1x"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/9228490" class="fa-stack hw-socialshare social-icons" target="_blank">
+                              <i class="fa fa-circle-thin fa-stack-2x"></i>
+                              <i class="fa fa-linkedin fa-stack-1x"></i>
+                           </a>
+                </div>
+                        </div>
+                    </div>
+              </div><!--end of hm-socia-icn-->
+          </div>
+      </div>
+     </div>
+   </div>
+ </div>
+    <!-- End of work-together popup -->
+
+ 
+</div>
+  
+
+
+</main>
+
+<div id="hw-ribbon-our-thinking" class=" log-clr-backgrnd container">
+                <div class="row">
+                    <div class="col-lg-12 col-padding">
+                        <span class="gotham-rounded-light ribon-font clr-white h-approch text-center rbn-ftr-others">We <i class="fa fa-heart  hm-heart"></i> to be your technology partners</span>
+                       
+                       
+                    </div>
+                </div>
+           </div> 
+</div>
+
+<div class="jb-mob" id="jb-mob"> 
+     <div class="jobs-tab-header">
+    <h1 class="text-center gotham-rounded-bok heading hw-font-heading job-hw-font-heading"> Jobs for you </h1>
+    <div class="carousel-padding job-carousel-padding"> 
+        <div class="line job-line"></div>
+    </div>
+  </div>
+
+  <div class="container job-container"> 
+  <ul class="job-board-content" id="paginationList">
+  {% assign items = site.jobboard | sort: 'date'| date: "%d-%m-%y"| reverse %}  
+{% for job in items %}
+  <li class="pagination-list">
+  <input type="radio" id="f-option{{forloop.index}}" name="selector" class="f-option" value="">
+    <label for="f-option{{forloop.index}}" class="job-title"><span>{{job.job_title}}</span></label>
+
+ <div class="job-table" id="jt-{{forloop.index}}">
+   <div class="job-row"><span class="job-table-cell"><img src="/assets/img/job-board/job-exp.png" alt="exp"></span><span class="job-table-cell">{{job.experience}}</span></div>
+    <div class="job-row"><span class="job-table-cell"><img src="/assets/img/job-board/job-location.png" alt="location"></span><span class="job-table-cell">{{job.location}}</span></div>
+   <div class="job-row"><span class="job-table-cell"><img src="/assets/img/job-board/job-skill.png" alt="skill"></span><span class="job-table-cell"><p class="job-word-wrap">{{job.skills}}</p></span></div>
+  </div>
+  </li>
+     {% endfor %}
+  </ul>
+ <!--  <div class="pager" id="pager"><a href="javascript:void(0);" target="_parent" title="Previous"><img src="/assets/img/pager-left.png" /></a>
+            <a href="javascript:void(0);" target="_parent" title="Next"><img src="/assets/img/pager-right.png" /></a>
+            </div> -->
+</div>
+<div class="hw-started1 log-clr-backgrnd container-fluid ">
+      <div class="gotham-rounded-light hw-main-heading clr-white h-approch collobo-hw-main-heading">We <i class="fa fa-heart  hm-heart"></i> to be your technology partners</div>
+</div>
+
+            <div class="container ms-form-mar" id="form-map-div">
+               <!-- <i class="fa fa-times job-close job-close-1"></i> -->
+               <h1 class="lets-work-heading">Lets Work Together<i class="fa fa-times job-close lets-job-close"></i></h1>
+               <div class="row">
+                  <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                     <!-- google map -->
+                     <div id="map"></div>
+                     <!-- End of google map -->
+                     <div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                     <div class="post-resume">
+                        <form class="form-signin"  action="https://getsimpleform.com/messages?form_api_token=0081d68f31d313aaa86b262fda0a1849" method="post" enctype="multipart/form-data">
+                          <input type='hidden' name='redirect_to' value='http://hashworks.co/thankyou/'/>
+                           <!-- start of form -->
+                           <div class="row">
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 form-col">
+                                 <div class="text-border">
+                                    <div class="input-group">
+                                       <div class="input-group-addon collaborative-input-group"><img src="/assets/img/talent_acquisition/name-img.png" alt="name"></div>
+                                       <input type="text" class="form-control collaborative-form-control placeholder-pro mainLoginInput input_name" id="name1" placeholder="NAME" required>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                 <div class="text-border">
+                                    <div class="input-group">
+                                       <div class="input-group-addon collaborative-input-group"><img src="/assets/img/talent_acquisition/email-img.png" alt="email"></div>
+                                       <input type="text" class="form-control collaborative-form-control placeholder-pro mainLoginInput input_email" id="email1" placeholder="EMAIL" required>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row ms-row-mar ms-row-mar-1">
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 form-col">
+                                 <div class="text-border">
+                                    <div class="input-group">
+                                       <div class="input-group-addon input-group-addon-cw"><img src="/assets/img/talent_acquisition/sub-img.png" alt="subject"></div>
+                                       <!-- <span class="caret collaborative-caret"></span> -->
+                                       <select class="form-control mainLoginInput gotham-rounded-light input_subject collaborative-input_subject sub-width sub-width1" id="subject">
+                                          <option value="Subject" class="subject">Subject</option>
+                                          <option value="Marketing" class="level-0">Marketing</option>
+                                          <option value="Design" class="level-0">Design</option>
+                                          <option value="UX" class="level-0">UX</option>
+                                          <option value="WordPress" class="level-0">WordPress</option>
+                                          <option value="Strategy" class="level-0">Strategy</option>
+                                          <option value="Automations" class="level-0">Automations</option>
+                                          <option value="News" class="level-0">News</option>
+                                          <option value="Content" class="level-0">Content</option>
+                                          <option value="Social" class="level-0">Social Media</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                 <div class="text-border">
+                                    <div class="input-group">
+                                       <div class="input-group-addon collaborative-input-group"><img src="/assets/img/talent_acquisition/phone-img.png" alt="phone"></div>
+                                       <input type="text" class="form-control collaborative-form-control placeholder-pro mainLoginInput input_phone" id="phone" placeholder="PHONE" required>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row ms-row-mar form-col-sec">
+                              <div class="col-lg-12 col-md-12 col-md-12 col-xs-12">
+                                 <div class="text-border">
+                                    <div class="input-group">
+                                       <div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png" alt="message"></div>
+                                       <textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control textarea-form-control placeholder-pro mainLoginInput input_message"  id="message" rows="3" required></textarea>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- end of text-area row-->
+                           <div class="attach-file collaborative-attach-file">
+                              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+                                 <input type="file" class="gotham-book input_file-upload collaborative-input_file-upload" id="file-upload" required>
+                                 <br/><br/>
+                                 <span class="attach-text collaborative-attach-text"><span><img src="/assets/img/talent_acquisition/attach.png" alt="attach"></span><span class="gotham-rounded-bok attach-span clr-white">Attach File</span></span>
+                                 <input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail" readonly="readonly"/>
+                              </div>
+                              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-5 submit-background collaborative-submit-background">
+                                 <button id="submit-btn" type="submit" class="btn">
+                                    <br>
+                                    <span class="submit-resume hr-display" style="margin: 0px auto;">
+                                       <img src="/assets/img/talent_acquisition/submit.png" class="img-submit collaborative-img-submit" alt="submit">
+                                       <p class="gotham-rounded-bok submit-text placeholder-pro img-para collaborative-submit">SUBMIT</p>
+                                    </span>
+                                 </button>
+                              </div>
+                           </div>
+                           <!-- end of attach-file-->
+                        </form>
+                        <!-- end of form -->
+                     </div>
+                     <!-- end of postresume -->
+                  </div>
+                  <!--end of col-lg-8-->
+               </div>
+            </div>
+{% assign items = site.jobboard | sort: 'date'| date: "%d-%m-%y"| reverse %}  
+{% for job in items %}
+<div id="jd-{{forloop.index}}" class="job-detailed-content">
+<h1 class="text-center gotham-rounded-bok heading hw-carousel-heading devops-heading"> <img src="/assets/img/arrows.png" class="devopss-fa-arrow-left job-devops-heading" alt="arrows">
+<span>Jobs Description</span></h1>
+  <div class="container job-container">
+<div>
+    <h1 class="job-title job-tit">{{job.job_title}}</h1>
+  <div class="job-table">
+   <div class="job-row"><span class="job-table-cell"><img src="/assets/img/job-board/job-exp.png" class="job-img" alt="exp"></span><span class="job-table-cell">{{job.experience}}</span></div>
+    <div class="job-row"><span class="job-table-cell"><img src="/assets/img/job-board/job-location.png" class="job-img" alt="location"></span><span class="job-table-cell">{{job.location}}</span></div>
+   <div class="job-row"><span class="job-table-cell"><img src="/assets/img/job-board/job-skill.png" class="job-img" alt="skill"></span><span class="job-table-cell"><p class="job-word-wrap">{{job.skills}}</p></span></div>
+   <div class="job-row"><span class="job-table-cell"><img src="/assets/img/job-board/job-cal.png" class="job-img" alt="cal"></span><span class="job-table-cell"><p class="job-word-wrap">Posted on {{ job.date | date: "%B" }} {{ job.date | date: "%-d" }}</p></span></div>
+  </div>
+  </div>
+
+<h1 class="job-title job-tit job-tit-board">Job Description</h1>
+
+<div class="container pannel-job job-hr">
+<ul>
+  {% for  job_descr in job.job_description %}
+    <li class="jb-skill1"><p class="jb-skill">{{job_descr}}</p></li>
+    {% endfor %}
+    </ul>
+</div>
+  <h1 class="job-title job-tit job-tit-board">Skills</h1>
+  <div class="container pannel-job">
+  <ul>
+   {% for  job_skills in job.skills %}
+    <li class="jb-skill1"><p class="jb-skill">{{job_skills}}</p></li>
+    {% endfor %}
+    </ul>
+</div>
+</div></div></div>
+ {% endfor %}
+<div class="apply-full-div"><button class="apply-div" data-toggle="modal" data-target="#start-project1">Apply for job</button></div>
+    <div id="start-project1" class="modal fade">
+          <div class="modal-dialog contact-modal es-contact-modal">
+              <div class="modal-content">
+                
+                  <div class="container form-container">
+                    <span class="hm-contact es-mob-contact"><i class="fa fa-mobile"></i><span class="hm-num gotham-rounded-light">+7259471785</span></span>
+           <img class="close-pop es-mob-close-pop" data-dismiss="modal" src="/assets/svg/close-pop.svg" alt="close">
+                    <h1 class="gotham-rounded-bold es-mob-head">Let's work together</h1>
+                    <div class="es-popup">
+                          <span class="gotham-rounded-bold es-pop-head">Let's Work Together
+                          <img class="close-pop desktop-close-pop" data-dismiss="modal" src="/assets/img/engage-us-responsive/cross-img.png" alt="close"></span>
+                        </div>
+                    <hr class="es-popup-hr">
+                    <div class="post-resume">
+                <form class="form-signin"  action="https://getsimpleform.com/messages?form_api_token=0081d68f31d313aaa86b262fda0a1849" method="post" enctype="multipart/form-data">  <!-- start of form -->
+                  <input type='hidden' name='redirect_to' value='http://hashworks.co/thankyou/'/>
+              <div class="row ">
+                  <div class="col-lg-6"> 
+                    <div class="text-border es-input-br-btm">
+                      <div class="input-group">
+                            <div class="input-group-addon"><img src="/assets/img/talent_acquisition/name-img.png" alt="name"></div>
+                            
+                        <input type="text" class="form-control placeholder-pro mainLoginInput input_name" id="name" placeholder="NAME" required>
+                      </div>
+                    </div>    
+                  </div>
+                
+                <div class="col-lg-6"> 
+                  <div class="text-border es-input-br-btm">
+                    <div class="input-group">
+                          <div class="input-group-addon"><img src="/assets/img/talent_acquisition/email-img.png" alt="email"></div>
+                      <input type="text" class="form-control placeholder-pro mainLoginInput input_email" id="email" placeholder="EMAIL" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row ms-row-mar es-ms-row-mar">
+                <div class="col-lg-6"> 
+                  <div class="text-border es-input-br-btm">
+                    <div class="input-group">
+                          <div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png" alt="subject"></div>
+                      <select class="form-control mainLoginInput gotham-rounded-light input_subject sub-width" id="subject">
+                        <option value="Subject">Subject</option>
+                        <option value="Marketing" class="level-0">Marketing</option>
+                        <option value="Design" class="level-0">Design</option>
+                        <option value="UX" class="level-0">UX</option>
+                        <option value="WordPress" class="level-0">WordPress</option>
+                        <option value="Strategy" class="level-0">Strategy</option>
+                        <option value="Automations" class="level-0">Automations</option>
+                        <option value="News" class="level-0">News</option>
+                        <option value="Content" class="level-0">Content</option>
+                        <option value="Social" class="level-0">Social Media</option>
+                      </select>
+                    </div>  
+                  </div>  
+                </div>
+                
+                <div class="col-lg-6"> 
+                  <div class="text-border es-input-br-btm">
+                    <div class="input-group">
+                          <div class="input-group-addon"><img src="/assets/img/talent_acquisition/phone-img.png" alt="phone"></div>
+                      <input type="text" class="form-control placeholder-pro mainLoginInput input_phone" id="phone" placeholder="PHONE" required>
+                    </div>
+                  </div>  
+                </div>
+              </div>
+
+              <div class="row ms-row-mar es-ms-row-mar">
+                <div class="col-lg-12">
+                  <div class="text-border es-input-br-btm">
+                  <div class="input-group">
+                          <div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png" alt="message"></div>
+                          
+                          <textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro mainLoginInput input_message"  id="message" rows="3" required></textarea>
+                        </div>  
+                  </div>
+                </div>
+              </div><!-- end of text-area row-->
+
+              <div class="attach-file" id="attach-file-id">
+                    <div class="col-lg-9 col-md-7 col-sm-7 col-xs-7">
+                      <input type="file" class="gotham-book input_file-upload" id="file-upload" required>
+                      <br/><br/>
+                      <span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png" alt="attach"></span><span class="gotham-rounded-bok attach-span">Attach File</span></span>
+                      <input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail" readonly="readonly"/>
+                    </div>
+                    <div class="col-lg-3 col-md-5 col-sm-5 col-xs-5 submit-background">
+                    <button id="submit-btn" type="submit" class="btn">
+              <br>
+              <span class="submit-resume hr-display" style="margin: 0px auto;">
+               <img src="/assets/img/talent_acquisition/submit.png" class="img-submit" alt="submit">
+               <span class="gotham-rounded-bok submit-text placeholder-pro img-para">SUBMIT</span>
+              </span>
+                    </div>
+                  </div><!-- end of attach-file-->
+            </form> <!-- end of form -->
+            </div><!-- end of postresume -->
+          <div class="show-as-love es-mob-like"><!-- hm social icon-->
+          <div class="row">
+            <div class=" col-lg-offset-7 col-lg-5">
+              <div class="hm-shows-love">
+                <h1 class="gotham-rounded-bold hm-show-text hw-heading show-text1">Show us your <i class="fa fa-heart hm-show-heart"></i> </h1>
+                <div class= "hm-icons hm-form-val">
+                  
+                            <a href="https://www.facebook.com/hashworks/" class="fa-stack hw-socialshare social-icons" target="_blank">
+                              <i class="fa fa-circle-thin fa-stack-2x"></i>
+                              <i class="fa fa-facebook fa-stack-1x"></i>
+                            </a>
+                            <a href="https://twitter.com/hashworksco" class="fa-stack hw-socialshare social-icons" target="_blank">
+                              <i class="fa fa-circle-thin fa-stack-2x"></i>
+                              <i class="fa fa-twitter fa-stack-1x"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/9228490" class="fa-stack hw-socialshare social-icons" target="_blank">
+                              <i class="fa fa-circle-thin fa-stack-2x"></i>
+                              <i class="fa fa-linkedin fa-stack-1x"></i>
+                               </a>
+                          </div>
+                        </div>
+                    </div>
+              </div><!--end of hm-socia-icn-->
+              </div>
+          </div>
+      </div>
+   </div>
+  </div>
+<!-- tab ends -->
+ 
+  
+
+</div>
+        
+
+{% include footer.html %} 
+{% include html-footer.html %} 
+

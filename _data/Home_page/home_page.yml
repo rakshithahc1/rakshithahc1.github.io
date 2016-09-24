@@ -1,0 +1,15 @@
+banner1:
+   - {title: 'We # on DevOps. DataOps. DataScience + UI/UX',
+      content: 'Delivering velocity & Agility for software driven business'
+   }
+
+banner3:
+   - { title: 'Check out the perfect mobile app',
+       title1: 'you ll fall in love with' ,
+   	   content: 'We handcraft solutions you love'
+   	}
+banner4:
+   - { title: 'Our thinking',
+   	   content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Assumenda nisi tempore hic, ullam corporis adipisci ratione id illum!',
+       link: 'dive deeper',
+   	}

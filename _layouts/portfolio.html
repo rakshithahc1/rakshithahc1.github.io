@@ -1,0 +1,383 @@
+{% include header.html %}
+
+<main class="resp-pf">
+
+	<h1 class="text-center gotham-rounded-bok heading hw-font-heading"> Portfolio </h1>
+	<!-- carousel-->
+
+   		<div class="carousel-padding"> 
+		   	<div class="line"></div>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+
+		   		<div class="container heading-caro-padd">
+				    <!-- Wrapper for slides -->
+				    <div class="carousel-inner" role="listbox">
+				    	<h2 class="gotham-rounded-light hw-heading h2-color text-center hw-line-height">{{site.data.Portfolio.carousel.content}}</h2> 
+					  	
+				    </div>
+				</div>
+			</div>
+	 	</div>
+
+	<!-- end of carousel-->
+
+				<!-- Start : Mobile view -->
+		
+				<div class="pf-mob container">
+					<div class="pf-vertical-header">
+						<div id="pvh-1" class="pf-vh pvh-active">
+							<div class="pvh-1 pvh"></div>
+							<span class="pvh-title">Dataops</span>
+						</div>
+						<div id="pvh-2" class="pf-vh">
+							<div class="pvh-2 pvh"></div>
+							<span class="pvh-title">Devops</span>
+						</div>
+						<div id="pvh-5" class="pf-vh">
+							<div class="pvh-5 pvh"></div>
+							<span class="pvh-title">Mobility</span>
+						</div>
+						<div id="pvh-4" class="pf-vh">
+							<div class="pvh-4 pvh"></div>
+							<span class="pvh-title">UI/UX</span>
+						</div>
+						<div id="pvh-3" class="pf-vh">
+							<div class="pvh-3 pvh"></div>
+							<span class="pvh-title">Data Science</span>
+						</div>
+					</div>
+					<div class="pf-vertical-data">
+						<div id="pvd-1" class="pvd-active pvd-inactive">
+							{% include pf-dataops.html %}
+						</div>
+						<div id="pvd-2" class="pvd-inactive">
+							{% include pf-devops.html %}
+						</div>
+						<div id="pvd-5" class="pvd-inactive">
+							{% include pf-mobility.html %}
+						</div>
+						<div id="pvd-4" class="pvd-inactive">
+							{% include pf-uxui.html %}
+						</div>
+						<div id="pvd-3" class="pvd-inactive">
+							{% include pf-datascience.html %}
+						</div>
+						<a href="javascript:void(0)" data-toggle="tooltip" data-placement="right" title="Coming Soon" class="hidden-lg"><button class="custom-btn portfolio-custom-btn">View Casestudies</button></a>
+					</div>
+
+			<!-- End : Mobile view -->
+			</div>
+
+
+		<!-- Working with-->
+			<div class="hw-tools">
+				<p class="text-center gotham-rounded-light hw-main-heading log-clr-backgrnd clr-white h-approch">Technology We <i class="fa fa-heart"></i>  to Work on:</p>
+
+				<!-- tools list -->
+					<div class="hw-tools-list container portfolio-hw-tools-list">
+						<!-- row -->
+							<div class="row">
+
+								<!-- hw-tolls-details -->
+									<div class="group" id="categories">
+									    <ul class="colorFix">
+									        <li>
+									            <span>
+									            <ul class="clearfix">
+													<li class="techImg"><img src="../assets/img/portfolio_Logos/java.png" alt="java"></li>
+													<li>Java</li>
+													</ul>
+													</span>
+									        </li>
+									        <li>
+									            <span>
+									            <ul class="clearfix">
+													<li class="techImg"><img src="../assets/img/portfolio_Logos/python.png" alt="python"></li>
+													<li>Python</li>
+													</ul>
+													</span>
+									        </li>
+									        <li>
+									            <span>
+									            <ul class="clearfix">
+													<li class="techImg"><img src="../assets/img/portfolio_Logos/Mean-stack.png" alt="mean"></li>
+													<li>MEAN stack</li>
+													</ul>
+													</span>
+									        </li>
+									        <li>
+									            <span>
+									            <ul class="clearfix">
+													<li class="techImg"><img src="../assets/img/portfolio_Logos/AWS.png" alt="aws"></li>
+													<li>AWS</li>
+													</ul>
+													</span>
+									        </li>
+									        <li>
+									            <span>
+									            <ul class="clearfix">
+													<li class="techImg"><img src="../assets/img/portfolio_Logos/Hadoop.png" alt="hadoop"></li>
+													<li>Apache Hadoop</li>
+													</ul>
+													</span>
+									        </li>
+									        <li>
+									            <span>
+									            <ul class="clearfix">
+													<li class="techImg"><img src="../assets/img/portfolio_Logos/D3.png" alt="d3"></li>
+													<li>D3 js</li>
+													</ul>
+													</span>
+									        </li>
+									        <li>
+									            <span>
+									            <ul class="clearfix">
+													<li class="techImg"><img src="../assets/img/portfolio_Logos/HTML5.png" alt="html5"></li>
+													<li>HTML 5</li>
+													</ul>
+													</span>
+									        </li>
+									        <li>
+									            <span><ul class="clearfix">
+													<li class="techImg"><img src="../assets/img/portfolio_Logos/css3.png" alt="css3"></li>
+													<li>CSS 3</li>
+													</ul>
+													</span>
+									        </li>
+									        <li>
+									            <span>
+									            <ul class="clearfix">
+													<li class="techImg"><img src="../assets/img/portfolio_Logos/Sass.png" alt="sass"></li>
+													<li>Sass</li>
+													</ul>
+													</span>
+									        </li>
+									        <li>
+									            <span>
+									            <ul class="clearfix">
+													<li class="techImg"><img src="../assets/img/portfolio_Logos/less.png" alt="less"></li>
+													<li>Less</li>
+													</ul>
+													</span>
+									        </li>
+									        <li>
+									            <span><ul class="clearfix">
+													<li class="techImg"><img src="../assets/img/portfolio_Logos/Coffee_Script.png" alt="coffee-script"></li>
+													<li>CoffeeScript</li>
+													</ul>
+													</span>
+									        </li>
+									        <li>
+									            <span>
+									            <ul class="clearfix">
+													<li class="techImg"><img src="../assets/img/portfolio_Logos/Android.png" alt="android"></li>
+													<li>Android/ios</li>
+													</ul>
+													</span>
+									        </li>
+									        <li>
+									            <span>
+									            <ul class="clearfix">
+													<li class="techImg"><img src="../assets/img/portfolio_Logos/Oracle_suits.png" alt="Oracle_suits"></li>
+													<li>Oracle Suits</li>
+													</ul>
+													</span>
+									        </li>
+									        <li>
+									            <span>
+									            <ul class="clearfix">
+													<li class="techImg"><img src="../assets/img/portfolio_Logos/Oracle-Service-bus.png" alt="oracle-servicebus"></li>
+													<li>Oracle Service Bus</li>
+													</ul>
+													</span>
+									        </li>
+									        <li>
+									            <span>
+									            <ul class="clearfix">
+													<li class="techImg"><img src="../assets/img/portfolio_Logos/Redis.png" alt="redis"></li>
+													<li>Redis</li>
+													</ul>
+													</span>
+									        </li>
+									        <li>
+									            <span>
+									            <ul class="clearfix">
+													<li class="techImg"><img src="../assets/img/portfolio_Logos/RabbitMQ.png" alt="rabbit"></li>
+													<li>RabbitMQ</li>
+													</ul>
+													</span>
+									        </li>
+									        <li>
+									            <span>
+									            <ul class="clearfix">
+													<li class="techImg"><img src="../assets/img/portfolio_Logos/socket.png" alt="socket"></li>
+													<li>Socket.io</li>
+													</ul>
+													</span>
+									        </li>
+									        <li>
+									            <span>
+										            <ul class="clearfix">
+														<li class="techImg"><img src="../assets/img/portfolio_Logos/pubnub.png" alt="pubnub"></li>
+														<li>PubNub</li>
+													</ul>
+												</span>
+									        </li>
+									        <li>
+									            <span>
+									            <ul class="clearfix">
+													<li class="techImg"><img src="../assets/img/portfolio_Logos/Maria_DB.png" alt="Maria_DB"></li>
+													<li>Maria DB</li>
+													</ul>
+													</span>
+									        </li>
+									        <li>
+									            <span>
+									            <ul class="clearfix">
+													<li class="techImg"><img src="../assets/img/portfolio_Logos/Docker.png" alt="Docker"></li>
+													<li>Docker</li>
+													</ul>
+													</span>
+									        </li>
+									        <li>
+									            <span>
+									            <ul class="clearfix">
+													<li class="techImg"><img src="../assets/img/portfolio_Logos/git.png" alt="git"></li>
+													<li>git</li>
+													</ul>
+													</span>
+									        </li>
+									        <li>
+									            <span>
+									            <ul class="clearfix">
+													<li class="techImg"><img src="../assets/img/portfolio_Logos/IOS.png" alt="IOS"></li>
+													<li>IOS</li>
+													</ul>
+													</span>
+									        </li>
+									        <li>
+									            <span>
+									            <ul class="clearfix">
+													<li class="techImg"><img src="../assets/img/portfolio_Logos/Nodejs.png" alt="Nodejs"></li>
+													<li>Nodejs</li>
+													</ul>
+													</span>
+									        </li>
+									        <li>
+									            <span>
+									            <ul class="clearfix">
+													<li class="techImg"><img src="../assets/img/portfolio_Logos/Puphpet.png" alt="Puphpet"></li>
+													<li>Puphpet</li>
+													</ul>
+													</span>
+									        </li>
+									        <li>
+									            <span>
+									            <ul class="clearfix">
+													<li class="techImg"><img src="../assets/img/portfolio_Logos/Vangrant.png" alt="Vangrant"></li>
+													<li>Vangrant</li>
+													</ul>
+													</span>
+									        </li>
+									    </ul>
+									</div>
+								<!-- End of hw-tools-details -->
+
+							</div>
+						<!-- End of row -->
+					</div>
+				<!-- End of tools list -->
+
+				<div class="client-backgrnd hw-works portfolio-client-backgrnd">
+					<h2 class="gotham-rounded-bok hw-tab-heading text-center h2-color">How We Work</h2>
+						
+					<!-- hw-works-row	 -->
+						<div class="hw-works-row container-fluid">
+							<!-- row -->
+								<div class="row">
+
+									<div class="col-20">
+										<div class="hw-work-cont arrow-top hw-work-cont-pad">
+											<div class="img-outer">
+												<img alt="book" src="/assets/img/solutions/book.svg">
+											</div>
+											<div class="hw-work-details">
+												<h3 class="text-uppercase">Learn</h3>
+												<p>Learn unique business problems by tapping the knowledge of the business climate &amp; technology</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-20 prot-col-20">
+										<div class="hw-work-cont arrow-bottom hw-work-cont-pad">
+											<div class="img-outer">
+												<img alt="beaker" src="/assets/img/solutions/beaker.svg">
+											</div>
+											<div class="hw-work-details">
+												<h3 class="text-uppercase">Research</h3>
+												<p>Every customer engagement will undergo the process of learning their business &amp; market trends with bench marking</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-20">
+										<div class="hw-work-cont arrow-top hw-work-cont-pad">
+											<div class="img-outer">
+												<img alt="bubble" src="/assets/img/solutions/bubble.svg">
+											</div>
+											<div class="hw-work-details">
+												<h3 class="text-uppercase">Consult</h3>
+												<p>Our specialists &amp; technologists will reaffirm your business needs with their industry experience in designing an optimal IT solution</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-20 prot-col-20">
+										<div class="hw-work-cont arrow-bottom hw-work-cont-pad">
+											<div class="img-outer">
+												<img alt="build" src="/assets/img/solutions/build.svg">
+											</div>
+											<div class="hw-work-details">
+												<h3 class="text-uppercase">Build</h3>
+												<p>The development &amp; test cycles will be short and rapid. Validate our deliverable in a continuous pipeline. We can quickly integrate your custom, legacy or enterprise class solutions</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-20">
+										<div class="hw-work-cont hw-work-cont-pad">
+											<div class="img-outer">
+												<img alt="van" src="/assets/img/solutions/van.svg">
+											</div>
+											<div class="hw-work-details">
+												<h3 class="text-uppercase">Deliver</h3>
+												<p>Our test driven development model on Agile will ensure on-time delivery of your projects with world class performance &amp; stability. Our solutions are highly scalable &amp; portable</p>
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+							<!-- End of row -->
+								<div style="position: relative">
+									<div class="apst-wrapper nav-scroll-up" style="right: 20px; bottom: 20px; position: fixed; display: block;">
+									<div class="apst-button"></div>
+									</div>
+								</div>
+						</div>
+					<!-- End of hw-works-row -->
+					</div>
+
+			</div>
+		<!-- End of Working with-->
+	</main>	
+
+{% include ribbon-footer.html %}
+	</div>
+{% include footer.html %}
+{% include html-footer.html %}
+<script type="text/javascript">
+  $('.ux-ui-carousel-inerval').carousel({
+  interval:500
+})
+</script>

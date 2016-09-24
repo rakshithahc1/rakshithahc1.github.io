@@ -1,0 +1,78 @@
+/*ui-ux carousel*/
+			.hw-ui-ux-carousel .carousel-control.left,
+			.hw-ui-ux-carousel .carousel-control.right {
+				background: transparent;
+				color: #616161;
+			    font-size: 10px;
+			    left: 20px;
+			    opacity: 0.5;
+			    position: absolute;
+			    text-align: center;
+			    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+			    top: 50%;
+			    width: auto;
+			}
+
+			.hw-ui-ux-carousel .carousel-control.right {
+				left: auto;
+				right: 20px;
+			}
+
+			.hw-ui-ux-carousel {
+				background: #fff;
+				border: 1px solid #e0e6ec;
+				box-shadow: 0 1px 2px rgba(0,0,0,0.25);
+				padding: 10px;
+			}
+
+			.hw-ui-ux-carousel img {
+				width: 100%;
+			}
+
+			.hw-view-project {
+				padding: 10px;
+				box-shadow: 0 0px 2px rgba(0,0,0,0.3);
+			}
+
+			.hw-view-project p {
+				font-family: "gotham-rounded-book";
+				font-size: 12px;
+			}
+
+			.hw-view-project .fa-pause,
+			.hw-view-project .fa-play {
+				background-color: #fcfcfc;
+				border: 1px solid #e2e2e2;
+				box-shadow: 0 0.25px 0.60px rgba(0,0,0,0.75);
+				padding: 3px 5px;
+				margin: 0 5px;
+				color: #cccccc;
+			}
+
+			.hw-view-project .fa-play:hover,
+			.hw-view-project .fa-pause:hover{
+				color: #ee2b7b;
+				cursor: pointer;
+				text-shadow: 0 1px 1px rgba(97,97,97,0.75);
+			}
+			 .hw-view-project .fa-play-active,.hw-view-project .fa-pause-active{
+            color: #ee2b7b;
+                cursor: pointer;
+                text-shadow: 0 1px 1px rgba(97,97,97,0.75);
+            }
+
+			.hw-view-project .fa-play-left,
+			.hw-view-project .fa-play-right {
+				font-size: 8px;
+				color: #fff;
+			}
+
+			.hw-ui-ux-carousel .fa-play-left {
+				-webkit-transform: rotate(180deg);
+				-moz-transform: rotate(180deg);
+				-ms-transform: rotate(180deg);
+				-o-transform: rotate(180deg);
+				transform: rotate(180deg);
+				
+			}
+		/*ui-ux carousel*/

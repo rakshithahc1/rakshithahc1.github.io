@@ -1,0 +1,7 @@
+title: 'Predictive Analytics'
+content: 'Big-data has unlocked spectrum of opportunity for companies to re-imagine how they do their business. Predictive analytics uses techniques like data mining, data modeling, data management, statistical algorithms, machine learning & artificial intelligence to analyze patterns and the likely-hood of future outcomes, risks and opportunities for businesses. This practice enables organizations to identify the trends,  understand customer behavior, improve business performance, help drive strategic decision making and create competitive advantage.'
+testimonial:
+    - { testimony: 'Without big data and analytics, companies are blind and deaf, wandering out onto the web like deer on a freeway.',name: 'Geoffrey Moore',role: 'Author and Consultant' }
+    - { testimony: 'Data is a precious thing and will last longer than the systems themselves.',name: 'Tim Berners-Lee',role: 'Inventor of WWW'}
+    - { testimony: 'We know the what, but we don’t know the why. When applying PA, we usually don’t know about causation, and we often don’t necessarily care. For many PA projects, the objective is more to predict than it is to understand the world and figure out what makes it tick.',name: 'Eric Siegel',role: 'Predictive Analytics'}
+

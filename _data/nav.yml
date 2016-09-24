@@ -1,0 +1,9 @@
+main-left:
+ - { url: '/solutions', text: 'Portfolio' }
+ - { url: '/engage_us', text: 'Engage Us' }
+ - { url: '/case_study', text: 'Case Study' }
+main-right:
+ - { url: '/company', text: 'Company' }
+ - { url: '/blog', text: 'Blog' }
+ - { url: '/job_board', text: 'Job Board' }
+ - { url: '#', text: 'News' }

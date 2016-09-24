@@ -1,0 +1,166 @@
+
+{% include header.html %}
+<main id="eng-carousel-padding">
+	<h1 class="text-center gotham-rounded-bok heading es-haeding"> Engage Us </h1>
+	<!-- carousel-->
+
+   		<div class="carousel-padding"> 
+		   	<div class="line"></div>
+			<!-- <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false"> -->
+		   		<div class="container heading-caro-padd">
+				    <!-- Wrapper for slides -->
+				    <!-- <div class="carousel-inner" role="listbox"> -->
+				    	<!--  <div class="carousel-inner" role="listbox"> -->
+				    	<h2 class="gotham-rounded-light hw-heading h2-color text-center hw-line-height es-heading-text es-heading-text-pad">{{site.data.Engage_Us.carousel.content}}</h2> 
+					  	
+				   <!--  </div> -->
+				    <!-- </div> -->
+				</div>
+			<!-- </div> -->
+	 	</div>
+	<!-- end of carousel-->
+ 
+	<!-- categories -->
+ 
+		<div class="container tab-section">
+
+			<!-- hw-engage-cont -->
+				<div class="hw-engage-cont hw-margin-div es-engage-cont">
+					<!-- row one-->
+						<div class="row ">
+
+							<div class="col-lg-6 col-md-8 col-sm-8 col-xs-12">
+								<h2 class="gotham-rounded-light hw-heading  h2-color">{{site.data.Engage_Us.engageus.part1[0].title}}</h2>
+								<div class="div-border-left es-border-left">
+									<p class="hw-copyright gotham-rounded-light para esp-margin-left">{{site.data.Engage_Us.engageus.part1[0].content}}
+									</p>
+								</div>
+								<a href='/our_thinking'><button class="custom-btn" id="know-more-two">know more</button></a>
+							</div>
+
+							<div class="col-lg-6 col-md-4 col-sm-4">
+								<div class="img-center img-outer es-ourthink-img">
+									<img src="/assets/img/homepage/Our_Thinking_Bulb.svg"  alt="it-service">
+								</div>
+							</div>
+
+						</div>
+					<!--end of row1-->
+				</div>
+			<!-- End of hw-engage-cont -->
+
+			<!-- hw-engage-cont -->
+				<div class="hw-engage-cont hw-margin-div es-engage-cont">
+					<!-- row 2 -->
+						<div class="row">
+
+							<div class="col-lg-6 col-md-4 col-sm-4 col-xs-12">
+								<div class="img-outer img-center es-upskill-img">
+									
+
+									<img src="/assets/img/homepage/Talent_Acquisition_color.svg"  alt="it-service">
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-8 col-sm-8 col-xs-12">
+								<h2 class="gotham-rounded-light hw-heading  h2-color">{{site.data.Engage_Us.engageus.part2[0].title}}</h2>
+								<div class="div-border-left es-border-left">
+									<p class="hw-copyright gotham-rounded-light para esp-margin-left">{{site.data.Engage_Us.engageus.part2[0].content}}
+									</p>
+								</div>
+								<a href='/collaborative_workforce'><button class="custom-btn" id="know-more-three">know more</button></a>
+							</div>
+
+						</div>
+					<!-- end of row2 -->
+				</div>
+			<!-- End of hw-engage-cont -->
+
+
+			<!-- hw-engage-cont -->
+				<div class="hw-engage-cont hw-margin-div es-engage-cont">
+					<!-- row3-->
+						<div class="row">
+
+							<div class="col-lg-6 col-md-8 col-sm-8 col-xs-12">
+								<h2 class="gotham-rounded-light hw-heading  h2-color">{{site.data.Engage_Us.engageus.part3[0].title}}</h2>
+								<div class="div-border-left es-border-left">
+									<p class="hw-copyright gotham-rounded-light para esp-margin-left">{{site.data.Engage_Us.engageus.part3[0].content}}
+									</p>
+								</div>
+								<a href='/bootcamp'><button class="custom-btn" id="know-more-one">know more</button></a>
+							</div>
+
+							<div class="col-lg-6 col-md-4 col-sm-4 col-xs-12">
+								<div class="img-center img-outer upskill-img es-upskill-img">
+									<img src="/assets/img/homepage/Upskilling_color.svg"  alt="it-service">
+				
+
+								</div>	
+							</div>
+
+						</div>
+					<!--end of row3-->
+				</div>
+			<!-- hw-engage-cont -->
+
+
+
+			
+
+		</div>
+
+		<section id="accordion" class="es-section es-tab-mob-view">
+			<div class="es-label-section es-label-section-1">
+				<input type="checkbox" id="check-1" checked/>
+				<label for="check-1">
+				<span class="img-class"><img alt="it-service" src="/assets/img/homepage/Our_Thinking_Bulb.svg"></span><span class="heading-class">{{site.data.Engage_Us.engageus.part1[0].title}}</span></label>
+				<article>
+					<p>{{site.data.Engage_Us.engageus.part1[0].content}}</p>
+					<div class="know-more"><a href="/our_thinking">
+					<button class="es-custom-btn">know more</button>
+					</a></div>
+				</article>
+			</div>
+			<div class="es-label-section es-label-section-2">
+				<input type="checkbox" id="check-2" />
+				<label for="check-2"><span class="img-class"><img alt="it-service" src="/assets/img/homepage/Talent_Acquisition_color.svg"></span><span class="heading-class">{{site.data.Engage_Us.engageus.part2[0].title}}</span></label>
+				<article>
+					<p>{{site.data.Engage_Us.engageus.part2[0].content}}</p>
+					<div class="know-more"><a href='/collaborative_workforce'><button class="es-custom-btn">know more</button></a></div>
+				</article>
+			</div>
+			<div class="es-label-section es-label-section-3">
+				<input type="checkbox" id="check-3" />
+				<label for="check-3"><span class="img-class"><img alt="it-service" src="/assets/img/homepage/Upskilling_color.svg"></span><span class="heading-class">{{site.data.Engage_Us.engageus.part3[0].title}}</span></label>
+				<article>
+					<p>{{site.data.Engage_Us.engageus.part3[0].content}}</p>
+					<div class="know-more"><a href='/bootcamp'><button class="es-custom-btn">know more</button></a></div>
+				</article>
+			</div>
+		</section>
+						<div style="position: relative">
+							<div class="engase-us-apst-wrapper nav-scroll-up">
+							<div class="apst-button"></div>
+							</div>
+						</div>
+
+		<!-- end of container-->
+
+	<!-- end of categories -->
+
+	<!-- clients -->
+		
+
+	<!-- end of clients-->
+
+
+
+</main>	
+
+<!-- tab ends -->
+
+{% include ribbon-footer.html %}
+{% include footer.html %}
+{% include html-footer.html %}
+

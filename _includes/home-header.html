@@ -1,0 +1,22 @@
+<body class="hw-home-body">
+  {% if page.layout == "default" %}
+    <header class="hw-home">
+      {% else %}
+    <header>
+  {% endif %}
+  <!-- logo -->
+  <div class="logo logo-desktop" id="log-fixed">
+    <a href="/"></a>
+  </div>
+  <!-- End of logo -->
+  <!-- navigation-bar -->
+  <nav class="navbar navbar-default" style="display: none;">
+    <ul class="nav navbar-nav navbar-right">
+      {% for item in site.data.nav.main-right %}
+        <li class="gotham-rounded-light header-links">
+          <a href="{{ item.url }}">{{ item.text }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

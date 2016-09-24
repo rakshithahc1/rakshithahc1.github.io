@@ -1,0 +1,12 @@
+title: 'CI/CD Orchestration'
+content: 'With Agile getting into the mainstream of software development, small-batch transfers, quick feedback loops, limited WIP, cost-of-delay and ability to address high variability of requirements, MTTR (Mean Time To Recovery) & MTBF (Mean Time Between Failures) has become the new paradigm to achieve software-efficiency. Continuous integration, continuous validation, continuous delivery and publishing workable-state of software at any given instant are the underlying delivery principles of every agile team today. CI/CD has brought transparency & velocity in today''s software delivery process.'
+testimonial:
+    - { testimony: 'The long-term value of an enterprise is not captured by the value of its products and intellectual property but rather by its ability to continuously increase the value it provides to customers — and to create new customers — through innovation.',name: 'Jez Humble',role: 'Author of Continuous Delivery' }
+
+
+
+
+
+
+
+

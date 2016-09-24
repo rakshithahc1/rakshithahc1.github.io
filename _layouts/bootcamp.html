@@ -1,0 +1,177 @@
+{% include header.html %}
+<div class="bc-desk">
+   <!-- upskilling carousel -->
+   <h1 class="text-center gotham-rounded-bok heading hw-font-heading"> Bootcamps </h1>
+   <div class="carousel-padding">
+      <div class="line"></div>
+      <div id="hw-upskilling" class="carousel slide" data-ride="carousel" data-interval="false">
+         <div class="container heading-caro-padd">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+               <h2 class="gotham-rounded-light hw-heading h2-color text-center hw-line-height">{{site.data.upskilling-carousel.content}}</h2>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- end of carousel-->
+   <!-- End of upskilling carousel -->
+   <div class="bootcamp-filter-contents">
+      <div class="hr-display"  id="bootcamp-filter-total">
+         <p class="hw-carousel-heading gotham-rounded-bok text-center" id="bootcamp-filter-total-no">24</p>
+         <h2 class="hw-copyright gotham-rounded-light">COURSES</h2>
+      </div>
+      <div class="hr-display" id="bootcamp-filter-controls">
+         <label class="gotham-rounded-light hw-socialshare"> 
+         <input checked="" type="checkbox" id="bootcamp-dataops-checkbox" value="DataOps">
+         <span class="case-studies-label-text font-weight-lighter bootcamp-margin-right">DataOps</span> 
+         </label> 
+         <label class="gotham-rounded-light hw-socialshare"> 
+         <input checked="" type="checkbox" value="DevOps" id="bootcamp-devops-checkbox">
+         <span class="case-studies-label-text font-weight-lighter bootcamp-margin-right">DevOps</span> 
+         </label>
+         <label class="gotham-rounded-light hw-socialshare checkbox-border-left-padding checkbox-border-right-padding"> 
+         <input checked="" type="checkbox" value="Data Science" id="bootcamp-datascie-checkbox">
+         <span class="case-studies-label-text font-weight-lighter bootcamp-margin-right">Data Science</span> 
+         </label>
+         <label class="gotham-rounded-light hw-socialshare"> 
+         <input checked="" type="checkbox" value="DataOps" id="bootcamp-ui-ux-checkbox">
+         <span class="case-studies-label-text font-weight-lighter bootcamp-margin-right">UI/UX</span> 
+         </label>
+         <label class="gotham-rounded-light hw-socialshare"> 
+         <input checked="" type="checkbox" value="DataOps" id="bootcamp-mobility-checkbox">
+         <span class="case-studies-label-text font-weight-lighter bootcamp-margin-right">Mobility</span> 
+         </label>
+      </div>
+   </div>
+
+   <div class="container bc-mob">
+      <!-- dropdown -->
+      <div class="btn-group bootcamp-btn-group blog-btn-group">
+         <button type="button" class="btn btn-danger bootcamp-btn-danger boot-dropdown-menu bootcamp-dropdown-menu">Select</button>
+         <button type="button" class="btn btn-danger dropdown-toggle bootcamp-dropdown-toggle bootcamp-btn-danger boot-dropdown-menu " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdown-toggle2">
+         <span class="caret bootcamp-caret"></span>
+         <span class="sr-only">Toggle Dropdown</span>
+         </button>
+         <ul class="dropdown-menu bootcamp-dropdown-menu">
+            <li class="bootcamp-dropdown-list"><a href="#" id="dropone"><label class="bootcamp-hw-socialshare"> 
+               <input checked="" type="checkbox" class="bootcamp-dataops-checkbox-1" value="DataOps">
+               <span class="case-studies-label-text font-weight-lighter"><h6 class="bootcamp-span-heading">DataOps</h6></span> 
+               </label> </a>
+            </li>
+            <li class="bootcamp-dropdown-list"><a href="#" id="droptwo"><label class="bootcamp-hw-socialshare"> 
+               <input checked="" type="checkbox" class="bootcamp-devops-checkbox-1" value="DataOps">
+               <span class="case-studies-label-text font-weight-lighter"><h6 class="bootcamp-span-heading">DevOps</h6></span> 
+               </label> </a>
+            </li>
+            <li class="bootcamp-dropdown-list"><a href="#" id="dropthree"><label class="bootcamp-hw-socialshare"> 
+               <input checked="" type="checkbox" class="bootcamp-datascience-checkbox-1" value="DataOps">
+               <span class="case-studies-label-text font-weight-lighter"><h6 class="bootcamp-span-heading">Data Science</h6></span> 
+               </label> </a>
+            </li>
+            <li class="bootcamp-dropdown-list"><a href="#" id="dropfour"><label class="bootcamp-hw-socialshare"> 
+               <input checked="" type="checkbox" class="bootcamp-ui-ux-checkbox-1" value="DataOps">
+               <span class="case-studies-label-text font-weight-lighter"><h6 class="bootcamp-span-heading">UI/UX</h6></span> 
+               </label> </a>
+            </li>
+            <li class="bootcamp-dropdown-list"><a href="#" id="dropfive"><label class="bootcamp-hw-socialshare"> 
+               <input checked="" type="checkbox" class="bootcamp-mobility-checkbox-1" value="DataOps">
+               <span class="case-studies-label-text font-weight-lighter"><h6 class="bootcamp-span-heading">Mobility</h6></span> 
+               </label> </a>
+            </li>
+         </ul>
+      </div>
+      <!-- dropdown end-->
+      
+ 
+</div>
+   <!-- upskilling details -->
+   <div class="hw-upskilling-details">
+      <!-- container -->
+      <div class="container bc-tab-container">
+         <!-- row -->
+         <div class="row">
+            <!-- col -->  
+            {% for cont in site.upskillingcs %}
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 upskill-cont-filter  all {{ cont.topic | downcase }}">
+               <a href="{{cont.url}}" id="upskillone">
+                  <h2 class="gotham-rounded-bok hw-heading heading text-center bootcamp-hw-heading">{{ cont.topic }}</h2>
+                  <!-- hw-upskill-cont -->
+                  <div class="hw-upskill-cont">
+                     <h3 class="gotham-rounded-bold text-uppercase hw-tab-heading text-center bootcamp-hw-tab-heading">{{ cont.title }}</h3>
+                     <p class="gotham-rounded-light text-justify bootcamp-hw-tab-para">{{ cont.desc }}</p>
+                     <!-- row -->
+                     <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8 bootcamp-clearfix">
+                           <div class="clearfix hw-upskill-time">
+                              <span class="gotham-rounded-light hw-contact-no2 bootcamp-hw-contact-no2 span-right">OnCampus</span>
+                              <span class="gotham-rounded-light hw-contact-no2 bootcamp-hw-contact-no2 bootcamp-hw-contact-no2-1">Full-Time</span>
+                           </div>
+                        </div>
+                        <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-4">
+                           <ul class="clearfix pull-right" id='views-container'> -->
+                              <!-- <li class="bootcamp-devops-svg">
+                                 <img src="/assets/img/spy.svg">
+                              </li> -->
+                              <!-- <li class="gotham-rounded-light hw-contact-no2 mbtloading viewscount" id='postviews'>{{ cont.hw_count }}</li>
+                              <li class="bootcamp-devops-img views-icon"><img src="/assets/img/spy.svg" alt="spy"></li>
+                           </ul>
+                        </div> -->
+                     </div>
+                     <!-- End of row -->
+                  </div>
+                  <!-- End of hw-upskill-cont -->
+               </a>
+            </div>
+            {% endfor %}
+            <!-- End of col -->
+         </div>
+         <!-- End of row -->
+      </div>
+      <!-- End of container -->
+   </div>
+   <!-- End of upskilling details -->
+  
+  {% include ribbon-footer1.html %}
+   <div style="position: relative">
+      <div class="bootcamp-apst-wrapper nav-scroll-up">
+         <div class="apst-button"></div>
+      </div>
+   </div>
+</div>
+
+<!-- Post Views Script by MBT -->
+<script type='text/javascript'>
+    window.setTimeout(function() {
+        document.body.className = document.body.className.replace(&#39;loading&#39;, &#39;&#39;);
+      }, 10);
+  </script>
+<script src='https://cdn.firebase.com/v0/firebase.js' type='text/javascript'/>
+<script>
+$.each($(&#39;a[name]&#39;), function(i, e) {
+var elem = $(e).parent().find(&#39;#postviews&#39;).addClass(&#39;mbtloading&#39;);
+var blogStats = new Firebase("https://hashworks-332b8.firebaseio.com/pages/id/" + $(e).attr(&#39;name&#39;));
+blogStats.once(&#39;value&#39;, function(snapshot) {
+var data = snapshot.val();
+var isnew = false;
+if(data == null) {
+data= {};
+data.value = 0;
+data.url = window.location.href;
+data.id = $(e).attr(&#39;name&#39;);
+isnew = true;
+}
+elem.removeClass(&#39;mbtloading&#39;).text(data.value);
+data.value++;
+if(window.location.pathname!=&#39;/&#39;)
+{
+if(isnew)
+blogStats.set(data);
+else
+blogStats.child(&#39;value&#39;).set(data.value);
+}
+});
+});
+</script>
+{% include footer.html %}
+{% include html-footer.html %}
+

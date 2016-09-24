@@ -1,0 +1,143 @@
+{% include header.html %}
+<main id="blog-whole">
+
+	<h1 class="text-center gotham-rounded-bok heading hw-font-heading"> Blog </h1>
+	<!-- carousel-->
+
+   		<div class="carousel-padding"> 
+		   	<div class="line"></div>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+
+		   		<div class="container heading-caro-padd">
+				    <!-- Wrapper for slides -->
+				    <div class="carousel-inner" role="listbox">
+				    	<h2 class="gotham-rounded-light hw-heading h2-color text-center hw-line-height blog-head">{{site.data.blog-carousel.content}}</h2> 
+				    </div>
+				</div>
+			</div>
+	 	</div>
+
+  <section class="banner">
+		<!-- <div class="casestudy-img">
+			<div class="banner-inner">
+				<h1 class="clr-white">Blog</h1>
+			</div>
+		</div> -->
+	</section>
+	<div class="blog-margin">
+		<!-- for 2nd li we used different color, so we hide this li -->
+		<!-- <li class="hide"></li> -->
+
+		<!-- We need to add the option value attr name in li for filter -->
+		<ul class="blog-grid clearfix blog-main">
+
+		<li class="intro-wrapper col-lg-12 col-md-12 col-sm-12 col-xs-12 bl-mrg-top">
+			<h2 class="tagline gotham-rounded-bold margin-zero hw-font-heading1">Sharing experience, Opinions & Thoughts</h2>
+			<h3 class="subtitle gotham-rounded-light ">Read our Chronicles</h3>
+			<p class="gotham-rounded-light blog-para-first">We take our work seriously. We express our thoughts and share our passion. We also have fun at work.
+Come share our thinking; know more about our team and the work we do…</p>
+
+			<!-- <div class="row filters cs-li-margin">
+				<div class="col-md-6 col-sm-6 col-xs-6 col-xxs-12 cats">
+					<form class="blog-cat-form" action="" method="get">
+						<select name="cat" id="cat" class="postform gotham-rounded-bok" multiple>
+							<option data-value="DataOps" class="level-0" value="1" class="case-studies-label-text">DataOps</option>
+							<option data-value="Devops" class="level-0" value="2" class="case-studies-label-text">DevOps</option>
+							<option data-value="Data Science" class="level-0" value="3" class="case-studies-label-text">DataScience</option>
+							<option data-value="UX/UI" class="level-0" value="4" class="case-studies-label-text">UXUI</option>
+							<option data-value="Mobility" class="level-0" value="5" class="case-studies-label-text">Mobility</option>
+						</select>
+					</form>
+				</div>
+			</div> -->
+
+			 <div class="btn-group bootcamp-btn-group blog-btn-group">
+         <button type="button" class="btn btn-danger bootcamp-btn-danger boot-dropdown-menu2 bootcamp-dropdown-menu">Categories</button>
+         <button type="button" class="btn btn-danger dropdown-toggle bootcamp-dropdown-toggle bootcamp-btn-danger boot-dropdown-menu1 " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdown-toggle2">
+         <span class="caret bootcamp-caret"></span>
+         <span class="sr-only">Toggle Dropdown</span>
+         </button>
+         <ul class="dropdown-menu bootcamp-dropdown-menu">
+            <li class="bootcamp-dropdown-list"><a href="#"><label class="bootcamp-hw-socialshare"> 
+               <input checked="" type="checkbox" class="blog-dataops-checkbox-1" value="DataOps">
+               <span class="case-studies-label-text font-weight-lighter"><h6 class="bootcamp-span-heading">DataOps</h6></span> 
+               </label> </a>
+            </li>
+            <li class="bootcamp-dropdown-list"><a href="#"><label class="bootcamp-hw-socialshare"> 
+               <input checked="" type="checkbox" class="blog-devops-checkbox-1" value="DataOps">
+               <span class="case-studies-label-text font-weight-lighter"><h6 class="bootcamp-span-heading">DevOps</h6></span> 
+               </label> </a>
+            </li>
+            <li class="bootcamp-dropdown-list"><a href="#"><label class="bootcamp-hw-socialshare"> 
+               <input checked="" type="checkbox" class="blog-datascience-checkbox-1" value="DataOps">
+               <span class="case-studies-label-text font-weight-lighter"><h6 class="bootcamp-span-heading">Data Science</h6></span> 
+               </label> </a>
+            </li>
+            <li class="bootcamp-dropdown-list"><a href="#"><label class="bootcamp-hw-socialshare"> 
+               <input checked="" type="checkbox" class="blog-ui-ux-checkbox-1" value="DataOps">
+               <span class="case-studies-label-text font-weight-lighter"><h6 class="bootcamp-span-heading">UI/UX</h6></span> 
+               </label> </a>
+            </li>
+            <li class="bootcamp-dropdown-list"><a href="#"><label class="bootcamp-hw-socialshare"> 
+               <input checked="" type="checkbox" class="blog-mobility-checkbox-1" value="DataOps">
+               <span class="case-studies-label-text font-weight-lighter"><h6 class="bootcamp-span-heading">Mobility</h6></span> 
+               </label> </a>
+            </li>
+         </ul>
+      </div>
+		</li>
+
+<!-- <ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">aa{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+ -->
+
+	{% for post in site.posts | sort: 'date'   %}
+
+
+	
+		<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 col-xxs-12 hw-filter-li Social blog-content hw-upskilling-details upskill-cont-filter {{ post.class}} {{ post.category}} {{ post.author}}">
+			<div class="image-wrapper">
+				<img width="" height="" alt="landingimage" src="{{post.landing_image}}">
+				<div class="blog-post-meta">
+					<a href="{{ post.url }}" class="button" target="_blank">View Article</a>
+				</div>
+			</div>
+ 
+			<div class="blog-content-wrapper">
+				<h4><span class="month gotham-rounded-bok">{{ post.published-date }}</span>  <span class="categories-list gotham-rounded-bok"><a rel="category tag" href="{{ post.url }}"  target="_blank">{{ post.category}}</a></span></h4>
+				<h3><a href="{{ post.url }}" class="gotham-rounded-light hw-para"   target="_blank">{{post.top-tweets}}</a></h3>
+				<p>
+				<img class="nav-bp-author" alt="authorimage" src="{{post.author_image}}">
+				<a rel="category tag" class="categories-list gotham-rounded-light" href="{{ post.url }}"  target="_blank">{{ post.author}}</a>
+				<!-- <span style="float:right;">
+					<span style="float:right;" id="{{forloop.index}}"><span class="nov-blog-like-icon fa fa-heart-o"></span>
+				<span class="gotham-rounded-bok month">19</span></span> -->
+					<!--  <iframe id="{{forloop.index}}" src="{{forloop.index}}" width="60" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+					<span class="likebtn-wrapper" id="likebtn_wjs-{{forloop.index}}" data-theme="custom" data-btn_size="14" data-f_size="14" data-icon_l_c_v="red" data-icon_d_c_v="red" data-label_c_v="red" data-counter_d_c="red" data-bg_c="transparent" data-brdr_c="transparent" data-identifier="blog-btn{{forloop.index}}" data-show_like_label="false" data-dislike_enabled="false" data-icon_dislike_show="false" data-counter_clickable="true"></span>
+					<script>
+					var id=$('.likebtn-wrapper').attr('id');
+					var bg=id.substring(12);
+					(function(d,e,s){if(d.getElementById("likebtn_wjs-1"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs-1";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+					<span class="likebtn-wrapper" data-identifier="item_{{forloop.index}}"></span>
+<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+					<span class="gotham-rounded-bok month">{{post.like_no}}</span> -->
+				<!-- </span>  -->
+				</p>
+			</div>
+		</li>
+	{% endfor %}
+
+
+	</ul>
+	</div>
+
+
+</main>
+{% include ribbon-footer.html %}
+{% include footer.html %}
+{% include html-footer.html %}

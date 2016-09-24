@@ -1,0 +1,5 @@
+title: 'Performance Engineering'
+content: 'With the proliferation of the digital business, high availability & consistently high performing IT-application eco-system represent how your customers experience your products and services. Traditional approach to performance management has changed significantly in the recent years due to increased complexity of IT-environment, new paradigms like data analytics, end-user monitoring, complex operations event processing and so on. Key differentiator to business success today is consistent good application performance. A integrated framework to manage performance across the application lifecycle with good DevOps practices can give a competitive advantage for your business.'
+testimonial:
+    - { testimony: '80% of enterprise say a slowdown to a mission-critical application would have a moderate to extreme effect on overall business performance.',name: 'Riverbed',role: '',company_name: '' }
+

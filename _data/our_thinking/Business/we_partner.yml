@@ -1,0 +1,24 @@
+part1:
+   - { title: 'Innovate',
+       imagesrc: '/assets/img/homepage/it-services.jpg',
+       content: 'Enterprise or startups! Disruption has always been a consistently effective strategy for new business entrants or the incumbents to dominate in their market causing the competitors to flee rather than fighting them. We can be your value partner to shape a business idea into disruptive strategy. Talk to us to partner for your digital initiatives.'}
+part2:
+   - { imagesrc: '/assets/img/homepage/job-board.jpg',
+   	   title: 'Scale',
+       content: 'Any IT system as it evolves with business they scale, but only to confront complexity. If not addressed, the complexity will spiral down any business. Complexity has its distinct properties. Across our development culture & tooling reversibility is a key thread to undo complexity. Our correlation & automation expertise can help you scale.'}
+part3:
+   - { title: 'Grow',
+       imagesrc: '/assets/img/homepage/it-services.jpg',
+       content: ' Growth is very essential for long term success. It yields great returns & value creation. A key enabler of growth apart from markets & business model is rapid adoption. Innovation barriers attribute to declining growth of mature companies. We can help you to anticipate growth. We help companies to align & build their emerging business opportunities into the core IT strategy. '}
+part4:
+   - { imagesrc: '/assets/img/homepage/job-board.jpg',
+   	   title: 'Mature',
+       content: ' Challenges companies face as they mature differ according to their growth strategies. It could be gaining market share; M&A or gaining growth in a particular portfolio of the company. To outperform their peers, companies rely on key market & business drivers including strong IT governance & continuous improvement. Agility & Velocity are key tenets to drive convergence & strategic growth. We help translating your IT expansion strategy to reality.'}
+part5:
+   - { title: 'Simplify',
+       imagesrc: '/assets/img/homepage/it-services.jpg',
+       content: 'As companies innovate, businesses grow, add new business line and products or expand in geographies the processes proliferate. IT that underlie these proliferations may get entangled between legacy systems & new applications to support the needs of the business. These anomalies may result is chaos of the architectural blueprint. As application volumes grow in response to business change the complexity becomes rife. We help with a framework to manage IT architecture and ensure both business and IT are aligned.'}
+part6:
+   - { title: 'Build',
+       imagesrc: '/assets/img/homepage/it-services.jpg',
+       content: 'Agile way of development has become mainstream now. Time to market, Cost Efficiency & Continuous Improvement has become key value drivers for every IT organization today. Companies have started seeing increased productivity & velocity in release of products and services and improved customer experience. With this new approach companies seek to integrate software development functions with IT operations so that team can jointly build, test, deploy, release & maintain software applications more frequently & more efficiently.'}

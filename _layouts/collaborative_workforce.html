@@ -1,0 +1,210 @@
+
+
+{% include header.html %}
+<div id="cw-responsive">
+   <main>
+      <h1 class="text-center gotham-rounded-bok heading hw-font-heading collabrative-header">Collaborative Workforce</h1>
+      <div class="carousel-padding">
+         <div class="line"></div>
+         <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="container heading-caro-padd">
+               <!-- Wrapper for slides -->
+               <div class="carousel-inner container" role="listbox">
+                  <h2 class="gotham-rounded-light hw-heading h2-color text-center hw-line-height">{{site.data.Talent_Acquisition.carousel.content}}</h2>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end of carousel-->
+      
+      <div class="bs-example line-padding collo-talent1">
+         <div class="container ot-tab-container ot-tab-container-top cw-tab-container-top">
+            <ul class="nav nav-tabs p-flex talent">
+               <div class="carousel-div">
+                  <li class="active c-flex c-flex-1 tab-val pvh-active cw-tab-val" id="tab-1">
+                     <a class="hw-te-tab hr-display c-flex-anchor"  data-toggle="tab" href="#employer" >
+                        <ul class="tab-img">
+                           <li  class="li-tab-mar"><img src="/assets/img/collaborative-works/employee.svg" alt="employee"></li>
+                           <li class="gotham-rounded-light  ">
+                              <p class="text-center hw-heading hr-display">Employer</p>
+                           </li>
+                        </ul>
+                     </a>
+                  </li>
+                  <li class="c-flex c-flex-1 tab-val cw-tab-val" id="tab-2">
+                     <a  class="hw-te-tab hr-display c-flex-anchor" data-toggle="tab" href="#patner" >
+                        <ul class="tab-img">
+                           <li class="li-tab-mar"><img src="/assets/img/talent_acquisition/Partner.svg" alt="patner"></li>
+                           <li class="gotham-rounded-light">
+                              <p class="text-center hw-heading  hr-display">Partner</p>
+                           </li>
+                        </ul>
+                     </a>
+                  </li>
+                  <li class="c-flex c-flex-1 tab-val cw-tab-val" id="tab-3">
+                     <a  class="hw-te-tab hr-display c-flex-anchor" data-toggle="tab" href="#job-seeker" >
+                        <ul class="tab-img" >
+                           <li class="li-tab-mar"><img src="/assets/img/collaborative-works/jobseeker.svg" alt="jobseeker"></li>
+                           <li class="gotham-rounded-light ">
+                              <p class="text-center hw-heading  hr-display">Job Seeker</p>
+                           </li>
+                        </ul>
+                     </a>
+                  </li>
+               </div>
+            </ul>
+         </div>
+         <!--end of contaier-fuild of tab heading-->
+         <div class="tab-content">
+            <div id="tabContent-1" class="tab-pane fade in active">
+               <div class="container ot-tab-container">
+                  <div class="hw-engage-cont">
+                     <h2 class="hw-heading gotham-rounded-bok h2-color subtitle-bold">Employer</h2>
+                     {% for para in site.data.Talent_Acquisition.talent.Employer %}
+                     <p class="hw-copyright gotham-rounded-light collaborative-employee-para">{{ para.employee }}</p>
+                     <br>
+                     {% endfor %}
+                     <p class="hw-copyright gotham-rounded-light h2-color collaborative-employee-para"><span class="gotham-rounded-bold hw-tab-heading clr-black"><img src="/assets/img/talent_acquisition/left.svg" class="right-workforce" alt="left"></span> To meet the demands of digital business transformation, VM leaders must provide alternatives to conventional VM process. This means reducing cycle times and allowing exceptions to long standing practices that may have hindered creativity or stalled vendor delivery of innovation.</p>
+                     <br>
+                     <p class="hw-copyright gotham-rounded-light h2-color collaborative-employee-para">Digital business demands greater dexterity in creating value from technology.Bimodal IT is a tool vital to addressing that challenge. Using it, IT adopts two distinct ways to meet enterprise demand - being agile and flexible, and having a step-by-step approach that ensures efficiency and predictability. Bimodal IT fills the digital divide between what IT provides and what IT really needs. Harnessing this same methodology for IT VM practices enables business stakeholders to (1) attain the innovation and agility they need from vendors, and (2) leverage best practices in VM adopted to fast-track" key business initiatives.<span class="gotham-rounded-bold hw-tab-heading clr-black"><img src="/assets/img/talent_acquisition/right.svg" class="right-workforce" alt="right"></span></p>
+                     <h2 class="gotham-rounded-bok hw-heading collaborative-apply-heading">Applying Bimodal IT to VM <span class="hw-copyright gotham-rounded-light">(Source: Gartner)</span></h2>
+                     <h2 class="gotham-rounded-bok hw-heading collaborative-apply-heading collaborative-apply-heading-1">Applying Bimodal IT to VM</h2>
+                     <h2 class="gotham-rounded-bok hw-heading hw-copyright gotham-rounded-light collaborative-apply-heading collaborative-apply-heading-1 collaborative-apply-heading-11">(Source: Gartner)</h2>
+                     <table class="table" >
+                        <thead>
+                           <tr >
+                              <th class="gotham-rounded-bold hw-para"></th>
+                              <th class="gotham-rounded-bold hw-para collaborative-conventional">Conventional</th>
+                              <th class="gotham-rounded-bold hw-para collaborative-conventional">Agile</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr >
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family"> Goal</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Reliability</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Agility</td>
+                           </tr>
+                           <tr>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family"> Value </td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Cost/risk reduction, price for performance</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Revenue, brand, external customer
+                                 experience
+                              </td>
+                           </tr>
+                           <tr >
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family"> Approach </td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Sequential, workflow-based approvals, policy</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Fluid, flexible, guardrails, not policy</td>
+                           </tr>
+                           <tr  >
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family"> Governance</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Controlled, policy-based</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Coordinated, based on guardrails</td>
+                           </tr>
+                           <tr  >
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family"> Vendors </td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Traditional, larger, technology leaders, enterprise suppliers</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Smaller, niche providers, micro-vendors, "new guard," emerging and new vendors</td>
+                           </tr>
+                           <tr   >
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family"> Risk</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Thorough, multipoint vendor risk management; complete due <br>diligence and ongoing risk monitoring; risk mitigation
+                                 negotiations may be lengthy
+                              </td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Calculated, prioritized and focused
+                                 risk management; deal <br> breakers identified early
+                              </td>
+                           </tr>
+                           <tr >
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Performance</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Measure contract milestones, SLAs</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Measure innovation, collaboration
+                                 within ecosystems
+                              </td>
+                           </tr>
+                           <tr >
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Relationships</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Hierarchical, may be cross-functional internally, single point <br> of contact (SPOC) model with vendor</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Collaborative, flexible, multidisciplinary teams internally, working in <br>clusters or vendor ecosystems</td>
+                           </tr>
+                           <tr>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family"> Talent </td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Skills and aptitude for conventional processes and projects</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Skills and aptitude for new and
+                                 uncertain processes
+                              </td>
+                           </tr>
+                           <tr >
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family"> Culture </td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">IT-centric, removed from customer</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Business-centric, close to customer</td>
+                           </tr>
+                           <tr  >
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family"> Data
+                                 Analytics
+                              </td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Historical views, reporting</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Predictive, proactive, leverage trends</td>
+                           </tr>
+                           <tr  class="last-tr">
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family last-td"> Cycle Times </td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family last-td">Long (months)</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family last-td">Short (days or weeks)</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+              
+            </div>
+            <!-- end of tab1-->
+            <!-- for the bottom up button-->   	
+           
+            <!-- tab2-->
+            <div id="tabContent-2" class="tab-pane fade in">
+               <div class="container ot-tab-container">
+                  <div class="hw-engage-cont">
+                     <h2 class="hw-heading gotham-rounded-bok h2-color paterner-heading subtitle-bold">Partner</h2>
+                     <!-- <p class="hw-copyright gotham-rounded-light">This course introduces attendees to the goals, objectives, benefits, practices of a DevOps environment with hands on working sessions. The course also addresses why DevOps is a mix of cultural, process  tools movement. This sessions talks about principles and mind-sets with practical hands-on use-cases that is pivoting the software delivery landscape.</p> -->
+                     <ul class="job-board-ul">
+                        {% for para in site.data.Talent_Acquisition.talent.Partner %}
+                        <li>
+                           <p class="hw-copyright gotham-rounded-light li-class collaborative-employee-para">{{para.partner}}</p>
+                           <br/>
+                        </li>
+                        {% endfor %}
+                     </ul>
+                  </div>
+               </div>
+              
+            </div>
+            <!-- end of tab2-->
+            <!-- tab3-->
+            <div id="tabContent-3" class="tab-pane fade in">
+               <div class="container ot-tab-container">
+                  <div class="hw-engage-cont">
+                     <h2 class="hw-heading gotham-rounded-bok h2-color paterner-heading subtitle-bold">Job Seeker</h2>
+                     <ul class="job-board-ul">
+                        {% for para in site.data.Talent_Acquisition.talent.Job %}
+                        <li>
+                           <p class="hw-copyright gotham-rounded-light li-class collaborative-employee-para">{{ para.job }}</p>
+                           <br/>
+                        </li>
+                        {% endfor %}
+                     </ul>
+                  </div>
+               </div>
+
+            </div>
+            <!-- end of tab3-->
+            {% include ribbon-footer1.html %}
+      <div style="position: relative">
+               <div class="collaborative-apst-wrapper nav-scroll-up">
+                  <div class="apst-button collo-apst-button"></div>
+               </div>
+            </div>
+   </main>
+</div>
+{% include footer.html %}
+{% include html-footer.html %}
+

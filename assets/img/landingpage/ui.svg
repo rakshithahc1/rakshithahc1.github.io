@@ -1,0 +1,16 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="75px" height="75px" viewBox="0 0 75 75" enable-background="new 0 0 75 75" xml:space="preserve">
+<g>
+	<path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M69.41,66.404H5.331
+		c-2.184,0-3.983-1.528-3.983-3.713V12.956C1.348,10.771,3.118,9,5.305,9h64.154c2.184,0,3.956,1.771,3.956,3.956v49.735
+		C73.415,64.876,71.594,66.404,69.41,66.404z"/>
+	
+		<line fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="1.348" y1="26.207" x2="72.961" y2="26.207"/>
+	
+		<circle fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="8.576" cy="17.611" r="2.199"/>
+	
+		<circle fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="17.131" cy="17.611" r="2.199"/>
+	
+		<circle fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="25.687" cy="17.611" r="2.199"/>
+</g>
+</svg>

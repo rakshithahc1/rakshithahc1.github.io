@@ -1,0 +1,94 @@
+{% include header.html %}
+<main>
+
+	<h1 class="text-center gotham-rounded-bok heading hw-font-heading"> Case Study </h1>
+	<!-- carousel-->
+
+   		<div class="carousel-padding"> 
+		   	<div class="line"></div>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+
+		   		<div class="container heading-caro-padd">
+				    <!-- Wrapper for slides -->
+				    <div class="carousel-inner" role="listbox">
+				    	<h2 class="gotham-rounded-light hw-heading h2-color text-center hw-line-height">{{site.data.casestudy-carousel.content}}</h2> 
+				    </div>
+				</div>
+			</div>
+	 	</div>
+
+
+
+	<section >
+		<!-- <div class="container nav-cs-margin">
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="gotham-rounded-bok hw-para para-padding">Tackling each project with passion and determination, in the world of web design, we’ve been working hard to turn heads. Here’s a few of our projects that not only command the user’s attention, but have driven a minimum of a 40% increase in organic search traffic. </p>
+				</div>
+			</div>
+		</div> -->
+		<!--tabs-->
+	<div class="case-studies-filter-contents">
+
+		<div class="hr-display"  id="case-studies-total">
+			<p class="hw-carousel-heading gotham-rounded-bok text-center" id="case-studies-total-no">24</p>
+			<h2 class="hw-copyright gotham-rounded-light">CASE STUDIES</h2>
+		</div>
+		<div class="hr-display" id="case-studies-filter-controls">
+			<label class="gotham-rounded-light hw-socialshare"> 
+			<input checked="" type="checkbox" id="case-studies-dataops-checkbox" value="DataOps">
+			<span class="case-studies-label-text font-weight-lighter">DataOps</span> 
+			</label> 
+			<label class="gotham-rounded-light hw-socialshare"> 
+			<input checked="" type="checkbox" value="DevOps" id="case-studies-devops-checkbox">
+			<span class="case-studies-label-text font-weight-lighter">DevOps</span> 
+			</label>
+			<label class="gotham-rounded-light hw-socialshare checkbox-border-left-padding"> 
+			<input checked="" type="checkbox" value="Data Science" id="case-studies-datascie-checkbox">
+			<span class="case-studies-label-text font-weight-lighter">Data Science</span> 
+			</label>
+			<label class="gotham-rounded-light hw-socialshare checkbox-border-right-padding"> 
+			<input checked="" type="checkbox" value="client work" id="case-studies-client-checkbox">
+			<span class="case-studies-label-text font-weight-lighter">Client Work</span> 
+			</label>
+			<label class="gotham-rounded-light hw-socialshare"> 
+			<input checked="" type="checkbox" value="DataOps" id="case-studies-ui-ux-checkbox">
+			<span class="case-studies-label-text font-weight-lighter">UI/UX</span> 
+			</label>
+			<label class="gotham-rounded-light hw-socialshare"> 
+			<input checked="" type="checkbox" value="DataOps" id="case-studies-mobility-checkbox">
+			<span class="case-studies-label-text font-weight-lighter">Mobility</span> 
+			</label>
+		</div>
+	</div>
+
+
+</section>
+	
+	<div class="casestudy-ul">
+		<ul class="blog-grid clearfix">
+			{% for navcasestudy in site.casestudy  %}
+			<li class="hw-filter-li upskill-cont-filter {{ navcasestudy.category | downcase }}">
+				<a href="{{navcasestudy.url}}">
+				<div class="image-wrapper">
+					<img width="" height="" alt="TopTweetsThumb" src="http://forgeandsmith.com/wp-content/uploads/2015/12/Top-Tweets-Thumb.jpg">
+					<div class="blog-post-meta2">
+						<h2  class=" clr-white gotham-rounded-bok casestudy-title-after">{{navcasestudy.title}}</h2>
+						<p class="  gotham-rounded-bok  casestudy-tag-color casestudy-description-init">{{navcasestudy.problem_statement | truncate: 30 }}</p>
+						<p class=" clr-white gotham-rounded-bok casestudy-category-init">{{navcasestudy.category}}</p>
+					</div>
+					<h2  class=" clr-white gotham-rounded-bok casestudy-title-init">{{navcasestudy.title}}</h2>
+				</div>
+				</a>
+			</li>
+			{% endfor %}
+	 	</ul>
+	</div>
+
+	
+
+
+	
+	</main>	
+
+{% include footer.html %}

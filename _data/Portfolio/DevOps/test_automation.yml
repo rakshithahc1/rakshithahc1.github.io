@@ -1,0 +1,11 @@
+title: 'Test Automation'
+content: 'With the resurgence of agile practice, test automation has gained significant adoption across the application lifecycle. Automation is seen as an invincible need for the success of DevOps today. Testing as a practice have been evolving by the side of Agile & XP practices over years. There are many new frameworks and development methods for delivering quality software today. TDD/BDD approach has pushed the limits of software testing to be more granular and context driven. Agile teams use Test automation as a potent tool for delivering velocity in the software release cycles.'
+testimonial:
+    - { testimony: 'Being able to take needless work out of the system is more important than being able to put more work into the system.',name: 'Gene Kim',role: 'The Phoenix Project' }
+
+
+
+
+
+
+

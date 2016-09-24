@@ -1,0 +1,20 @@
+part1:
+   - { title: 'Delivery Velocity',
+       imagesrc: '/assets/img/homepage/it-services.jpg',
+       content: 'Strong IT performance ensure companies to achieve long term success & gain real business value. Automation of deployment practices can eliminate the anti-patterns and bring visibility to teams involved by aiding cross functional collaboration, enabling faster feedback so that problems are identified and resolved early. A repeated, reliable & more frequent code deployments with fewer failures will definitely add to the productivity goals of the companies and it also attribute to their profitability & market share. Investing in IT-initiatives can deliver real outcomes and give businesses a competitive advantage.'}
+part2:
+   - { imagesrc: '/assets/img/homepage/job-board.jpg',
+   	   title: 'Digital Business',
+       content: 'With technology being the driver in today''s economy, IT is driving the transformation in every business. Organizations are taking a Bimodal approach to run the business & also to enable transformation. With rapid proliferation of technology trends, companies have unprecedented opportunities to innovate, redesign their products & services and gain access to new markets. IT has become a new strategic asset for organizations to differentiate and compete. We can help you drive change with new tools, new skills & ability to fulfil your new digital future. '}
+part3:
+   - { title: 'Software Intelligence',
+       imagesrc: '/assets/img/homepage/it-services.jpg',
+       content: 'Companies with a data driven culture are productive & consistently make right decisions. Ability to make decisions, learn, evolve & discover form the key tenets for software intelligence today. Software intelligence has emerged as a core capability in organizations not only to improve operational excellence but also to power innovation. Given the fact, still many enterprises are struggling to fully utilize their data. The challenge is not limited to handling the volume of data, but also with complexities of identifying, capturing, categorizing, analyzing & sharing it across relevant streams. We build rule based automation engines capable enough to self-evolve & make new discovery of your business functions.'}
+part4:
+   - { imagesrc: '/assets/img/homepage/job-board.jpg',
+   	   title: 'UX Adoption',
+       content: 'Companies today adopt UX-first approach as part of their product development strategy. UX goes beyond mere functionality & usability. Companies see their products as an interface between them and their customers by delivering meaningful experience which itself manifest as a product. Consumer businesses have made good strides in connecting their products &  services to their customers, in the enterprise world UX is still void. There is a paradigm shift in the way enterprises are fast adopting to consumer way of designing enterprise software. We can help you transform to adopt the UX journey.'}
+part5:
+   - { title: 'Workforce Collaboration',
+       imagesrc: '/assets/img/homepage/it-services.jpg',
+       content: 'Technology empowers people to learn, adopt, evolve & change. Organizations must be built for change, which means how you repurpose the company for the market needs & customer behavior. To achieve scale & to stay relevant companies should need to adopt to new skills, new trends, technology proliferation and whole new ways of working. Of all the needs, the focal-point for any change are the people and their readiness. People remain at the core of any business success. For companies to propel themselves forward, more than right technology they need right people to do the right things. Imagine a workforce that is change-ready and responsive that go beyond the boundaries of your organization.'}

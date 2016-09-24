@@ -1,0 +1,64 @@
+/*contact*/
+    .contact{
+
+        padding: 15px 20px 15px 20px;
+        background-color: #0ab4c5;
+            
+    }
+/*End of contact*/
+
+/*header-search*/
+    #credits input {
+        -webkit-box-shadow:0 0 3px rgba(0, 0, 0, 0.2) inset;
+        -moz-box-shadow:0 0 3px rgba(0, 0, 0, 0.2) inset;
+        -o-box-shadow:0 0 3px rgba(0, 0, 0, 0.2) inset;
+        -ms-box-shadow:0 0 3px rgba(0, 0, 0, 0.2) inset;
+        box-shadow:0 0 3px rgba(0, 0, 0, 0.2) inset;
+        background: transparent;
+    }
+
+    #credits .search{
+        color: #fff;
+        font-size: 20px;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+        background-color: #79c2e2;
+        border: none;
+    }
+/*End of header-search*/
+
+/*footer*/
+    .footer{
+        height: 75px;
+        padding: 0 45px 0;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+    }
+
+    .footer > div {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        margin: auto;
+    }
+
+    .footer>div:last-child {
+        -webkit-justify-content: -webkite-flex-end;
+        -moz-justify-content: -moz-flex-end;
+        -o-justify-content: -o-flex-end;
+        -ms-justify-content: -ms-flex-end;
+        justify-content: flex-end;
+    }
+
+    .social-icons{
+        margin-right: 35px;
+    }
+
+    .footer .social-icons:last-child {
+        margin-right: 0;
+    }
+/*footer*/
