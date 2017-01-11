@@ -1,7 +1,7 @@
 ---
 layout: ups_devops
-topic: DevOps
-title: DevOps for begineers
+topic: HTML camp
+title: test
 permalink: /upskills/devops/
 desc: >-
   This course introduces attendees to the goals, objectives, benefits, practices
